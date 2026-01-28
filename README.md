@@ -219,17 +219,22 @@ This application is configured for easy deployment to Vercel:
    - Select this repository
    - Vercel will automatically detect the Flask app
 
-4. **Deploy**
+4. **Configure environment variables (Optional but recommended)**
+   - In Vercel project settings, add environment variable:
+   - `FLASK_ENV` = `production` (disables debug mode for security)
+
+5. **Deploy**
    - Click "Deploy"
    - Your app will be live in minutes at `https://your-project.vercel.app`
 
-5. **Access your deployed app**
+6. **Access your deployed app**
    - Vercel provides a public URL automatically
    - Every push to your main branch auto-deploys
 
 **Configuration files:**
 - `requirements.txt` - Python dependencies
 - `vercel.json` - Vercel deployment configuration
+- `themes/` - Question bank files (automatically included)
 
 **Note:** The app uses serverless functions on Vercel, so it scales automatically and has no server management overhead.
 
@@ -238,13 +243,15 @@ This application is configured for easy deployment to Vercel:
 **Deploy to Railway:**
 1. Sign up at [railway.app](https://railway.app)
 2. Connect your GitHub repository
-3. Deploy with one click
+3. Set environment variable: `FLASK_ENV=production`
+4. Deploy with one click
 
 **Deploy to Render:**
 1. Sign up at [render.com](https://render.com)
 2. Create a new Web Service
 3. Connect your GitHub repository
-4. Set start command: `python flaskapp.py`
+4. Set environment variable: `FLASK_ENV=production`
+5. Set start command: `python flaskapp.py`
 
 **Deploy to PythonAnywhere:**
 1. Sign up at [pythonanywhere.com](https://www.pythonanywhere.com)
