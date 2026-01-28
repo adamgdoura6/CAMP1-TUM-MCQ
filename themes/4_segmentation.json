@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "seg1",
+      "text": "What is the definition of image segmentation according to the lecture?",
+      "options": {
+        "A": "Detecting edges in an image",
+        "B": "Assigning each pixel to one of the predefined classes",
+        "C": "Finding objects using bounding boxes",
+        "D": "Classifying whole images"
+      },
+      "correct": "B",
+      "explanation": "Slide \"What is Segmentation?\": segmentation is defined as \"the process of assigning each pixel of the received image into one of the predefined classes.\""
+    },
+    {
+      "id": "seg2",
+      "text": "Which task assigns a single label to the entire image?",
+      "options": {
+        "A": "Semantic segmentation",
+        "B": "Instance segmentation",
+        "C": "Object detection",
+        "D": "Classification"
+      },
+      "correct": "D",
+      "explanation": "The slide \"What is Segmentation\" distinguishes classification as image-level labeling, unlike pixel-wise segmentation."
+    },
+    {
+      "id": "seg3",
+      "text": "What is the key difference between semantic and instance segmentation?",
+      "options": {
+        "A": "Semantic segmentation detects edges",
+        "B": "Instance segmentation labels each pixel",
+        "C": "Semantic segmentation groups all objects of a class together",
+        "D": "Instance segmentation does not use pixels"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Kinds of Segmentation\": semantic segmentation \"classifies each pixel/voxel of interest as a single object\", whereas instance segmentation identifies each individual object."
+    },
+    {
+      "id": "seg4",
+      "text": "Which segmentation type distinguishes both classes and individual instances?",
+      "options": {
+        "A": "Semantic segmentation",
+        "B": "Instance segmentation",
+        "C": "Panoptic segmentation",
+        "D": "Classification"
+      },
+      "correct": "C",
+      "explanation": "Slide \"What is Segmentation\" shows panoptic segmentation combining semantic and instance information."
+    },
+    {
+      "id": "seg5",
+      "text": "Which statement best describes conventional (non-ML) segmentation methods?",
+      "options": {
+        "A": "They always require annotated data",
+        "B": "They are based on learned representations",
+        "C": "They rely on handcrafted features like intensity or shape",
+        "D": "They outperform ML methods on complex tasks"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Conventional and ML-based Segmentation\": conventional methods are based on features like \"shape, texture, intensity, color\" and do not necessarily require labels."
+    },
+    {
+      "id": "seg6",
+      "text": "When are ML-based segmentation methods particularly beneficial?",
+      "options": {
+        "A": "For very basic thresholding tasks",
+        "B": "When no labels are available",
+        "C": "For complex segmentation problems",
+        "D": "For histogram analysis"
+      },
+      "correct": "C",
+      "explanation": "The lecture states ML-based segmentation \"can handle complex tasks\" but requires annotated data."
+    },
+    {
+      "id": "seg7",
+      "text": "What is the main limitation of simple thresholding?",
+      "options": {
+        "A": "High computational cost",
+        "B": "Sensitivity to noise and varying thresholds",
+        "C": "Inability to work on grayscale images",
+        "D": "Requirement of seed points"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Thresholding\": thresholds \"can change even between images of same type\" and the method is \"sensitive to noise.\""
+    },
+    {
+      "id": "seg8",
+      "text": "Why are histograms useful for thresholding?",
+      "options": {
+        "A": "They remove noise",
+        "B": "They show spatial relationships",
+        "C": "They visualize the distribution of pixel intensities",
+        "D": "They compute gradients"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Histograms\": \"A histogram shows the distribution of pixel values in a (gray scale) image.\""
+    },
+    {
+      "id": "seg9",
+      "text": "What is a major drawback of manual thresholding?",
+      "options": {
+        "A": "It requires machine learning",
+        "B": "It is computationally expensive",
+        "C": "Determining the threshold is tedious",
+        "D": "It cannot be implemented in code"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Manual Thresholding\": explicitly states \"Determining threshold is tedious\" and \"Sensitive to noise.\""
+    },
+    {
+      "id": "seg10",
+      "text": "What criterion does Otsu’s method optimize?",
+      "options": {
+        "A": "Edge strength",
+        "B": "Intra-class variance",
+        "C": "Inter-class variance",
+        "D": "Gradient magnitude"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Otsu Threshold Detection\": threshold is selected by maximizing the \"inter-class variance.\""
+    },
+    {
+      "id": "seg11",
+      "text": "Why can Otsu thresholding fail in noisy images?",
+      "options": {
+        "A": "It relies on gradients",
+        "B": "It has limited control and is noise sensitive",
+        "C": "It requires seed points",
+        "D": "It only works on color images"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Otsu Thresholding\": lists \"Noise sensitive\" and \"Limited control over threshold.\""
+    },
+    {
+      "id": "seg12",
+      "text": "What advantage does multi-thresholding offer in radiology?",
+      "options": {
+        "A": "Automatic noise removal",
+        "B": "Selection of multiple tissue ranges",
+        "C": "Lower computational cost",
+        "D": "No parameter tuning"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Multi Thresholding\": allows selecting values \"between two thresholds\" and is \"more useful for radiology.\""
+    },
+    {
+      "id": "seg13",
+      "text": "What is the core idea of edge detection?",
+      "options": {
+        "A": "Detect homogeneous regions",
+        "B": "Detect changes in pixel intensities",
+        "C": "Detect texture patterns",
+        "D": "Detect connected components"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Edge Detection\": \"Edges are changes in pixel intensities.\""
+    },
+    {
+      "id": "seg14",
+      "text": "Why is edge detection often insufficient on its own for segmentation?",
+      "options": {
+        "A": "It produces too many labels",
+        "B": "It is insensitive to noise",
+        "C": "It can result in incomplete object detection",
+        "D": "It requires annotated data"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Edge Detection\": lists \"Incomplete Detection\" and \"Overlapping Objects\" as limitations."
+    },
+    {
+      "id": "seg15",
+      "text": "What is the purpose of non-maximum suppression in Canny edge detection?",
+      "options": {
+        "A": "Reduce noise",
+        "B": "Thin edges to single-pixel width",
+        "C": "Detect seed points",
+        "D": "Apply thresholding"
+      },
+      "correct": "B",
+      "explanation": "Canny pseudocode slide: non-maximum suppression keeps only local maxima in gradient direction."
+    },
+    {
+      "id": "seg16",
+      "text": "What is the fundamental principle of region growing?",
+      "options": {
+        "A": "Gradient magnitude",
+        "B": "Seed points and similarity criteria",
+        "C": "Histogram separation",
+        "D": "Global optimization"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Region Growing\": explicitly states it is \"Based on seed points and similarity criteria.\""
+    },
+    {
+      "id": "seg17",
+      "text": "Why is region growing sensitive to noise?",
+      "options": {
+        "A": "It relies on gradients",
+        "B": "Seed points propagate errors",
+        "C": "It ignores intensity information",
+        "D": "It uses global thresholds"
+      },
+      "correct": "B",
+      "explanation": "Slides list \"Sensitivity to heterogeneity and noise\" and manual seed selection as limitations."
+    },
+    {
+      "id": "seg18",
+      "text": "What is the key idea behind watershed segmentation?",
+      "options": {
+        "A": "Thresholding the histogram",
+        "B": "Flooding from local minima",
+        "C": "Clustering pixel intensities",
+        "D": "Edge linking"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Watershed\": \"Floods image from local minima (histogram).\""
+    },
+    {
+      "id": "seg19",
+      "text": "What common problem occurs with watershed segmentation?",
+      "options": {
+        "A": "Underflow errors",
+        "B": "Over- or under-segmentation",
+        "C": "Lack of spatial context",
+        "D": "High memory usage only"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Watershed\": lists \"Over- or Under-segmentation\" as a major limitation."
+    },
+    {
+      "id": "seg20",
+      "text": "Why is graph-cut segmentation considered robust?",
+      "options": {
+        "A": "It uses only local information",
+        "B": "It finds a global optimum",
+        "C": "It does not require parameters",
+        "D": "It ignores noise"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Graph-cut\": lists \"Global optimum\" and \"Robust against noise.\""
+    },
+    {
+      "id": "seg21",
+      "text": "What is the main drawback of graph-cut segmentation?",
+      "options": {
+        "A": "Low accuracy",
+        "B": "Sensitivity to initial parameters",
+        "C": "Inability to handle noise",
+        "D": "No flexibility"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Graph-cut\": lists \"Sensitivity to initial parameter\" and \"Computational complex.\""
+    },
+    {
+      "id": "seg22",
+      "text": "What does k-means clustering minimize?",
+      "options": {
+        "A": "Inter-cluster distance",
+        "B": "Intra-cluster variance",
+        "C": "Gradient magnitude",
+        "D": "Graph cut cost"
+      },
+      "correct": "B",
+      "explanation": "k-means slides show iterative assignment to nearest centroid and centroid update, minimizing intra-cluster variance."
+    },
+    {
+      "id": "seg23",
+      "text": "Why is choosing k critical in k-means segmentation?",
+      "options": {
+        "A": "It affects runtime only",
+        "B": "It determines the number of clusters",
+        "C": "It controls gradient strength",
+        "D": "It removes noise"
+      },
+      "correct": "B",
+      "explanation": "Slide \"k-Means on CT\": lists \"Choosing the right k\" as a major challenge."
+    },
+    {
+      "id": "seg24",
+      "text": "What is a superpixel in SLIC?",
+      "options": {
+        "A": "A pixel with high intensity",
+        "B": "A cluster of pixels with similar properties",
+        "C": "A segmented object",
+        "D": "A voxel group in 3D"
+      },
+      "correct": "B",
+      "explanation": "Slide \"SLIC\": \"Superpixel = group of pixels that share common characteristics.\""
+    },
+    {
+      "id": "seg25",
+      "text": "Why is SLIC often used as a preprocessing step?",
+      "options": {
+        "A": "It removes noise completely",
+        "B": "It reduces the number of elements",
+        "C": "It replaces segmentation",
+        "D": "It computes metrics"
+      },
+      "correct": "B",
+      "explanation": "By grouping pixels into superpixels, SLIC reduces complexity while preserving boundaries."
+    },
+    {
+      "id": "seg26",
+      "text": "What is the primary purpose of morphological operations?",
+      "options": {
+        "A": "Initial segmentation",
+        "B": "Feature extraction",
+        "C": "Refining segmentation results",
+        "D": "Metric computation"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Morphological Operations\": \"Primarily useful for refining segmentation results.\""
+    },
+    {
+      "id": "seg27",
+      "text": "What does an opening operation consist of?",
+      "options": {
+        "A": "Dilation followed by erosion",
+        "B": "Erosion followed by dilation",
+        "C": "Thresholding followed by erosion",
+        "D": "Closing followed by smoothing"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Opening\": explicitly shows \"Erosion → Dilation.\""
+    },
+    {
+      "id": "seg28",
+      "text": "Why is accuracy a problematic metric in medical image segmentation?",
+      "options": {
+        "A": "It ignores true positives",
+        "B": "It ignores class imbalance",
+        "C": "It cannot be computed",
+        "D": "It over-penalizes false positives"
+      },
+      "correct": "B",
+      "explanation": "Slides \"The Problem with Accuracy\": shows very high accuracy despite missing the target completely due to class imbalance."
+    },
+    {
+      "id": "seg29",
+      "text": "What does the Dice coefficient measure?",
+      "options": {
+        "A": "Pixel-wise accuracy",
+        "B": "Boundary distance",
+        "C": "Overlap between prediction and ground truth",
+        "D": "Maximum error"
+      },
+      "correct": "C",
+      "explanation": "Slide \"DICE Coefficient\": Dice is defined using \"Area of Overlap\" between prediction and label."
+    },
+    {
+      "id": "seg30",
+      "text": "How does IoU differ from Dice?",
+      "options": {
+        "A": "It includes true negatives",
+        "B": "It penalizes misclassifications harder",
+        "C": "It ignores overlap",
+        "D": "It is identical to Dice"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Intersection over Union\": states IoU \"Penalizes miss-classifications harder than Dice.\""
+    },
+    {
+      "id": "seg31",
+      "text": "What is the Hausdorff distance sensitive to?",
+      "options": {
+        "A": "Overlap",
+        "B": "Outliers",
+        "C": "True negatives",
+        "D": "Voxel size"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Hausdorff Distance\": explicitly states it is \"Quite vulnerable to outliers.\""
+    },
+    {
+      "id": "seg32",
+      "text": "Why is Hausdorff distance not suitable as a sole segmentation metric?",
+      "options": {
+        "A": "It ignores boundaries",
+        "B": "It does not check for overlap",
+        "C": "It is too slow",
+        "D": "It requires 3D data"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Hausdorff Distance\": \"Does not check for overlap\" and is \"not suitable alone.\""
+    },
+    {
+      "id": "seg33",
+      "text": "What is a key advantage of 3D segmentation over stacking 2D results?",
+      "options": {
+        "A": "Lower computational cost",
+        "B": "Easier implementation",
+        "C": "Preservation of full spatial context",
+        "D": "Less memory usage"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Using 3D Volume\": lists \"Preserves full spatial context of structures.\""
+    },
+    {
+      "id": "seg34",
+      "text": "What is a drawback of running segmentation directly on 3D volumes?",
+      "options": {
+        "A": "Loss of accuracy",
+        "B": "Need for alignment",
+        "C": "High computational cost",
+        "D": "Inability to compute volume"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Using 3D Volume\": lists \"High computational costs\" and \"Data size.\""
+    },
+    {
+      "id": "seg35",
+      "text": "According to the take-home messages, which statement is correct?",
+      "options": {
+        "A": "Machine learning is always required",
+        "B": "Conventional segmentation is useless",
+        "C": "Metric choice depends on the task",
+        "D": "Accuracy is sufficient in all cases"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Take-home-messages\": \"Always: Select the right metric for the tasks.\""
+    }
+  ]
+}

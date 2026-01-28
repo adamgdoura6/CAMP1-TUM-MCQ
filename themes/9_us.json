@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "us1",
+      "text": "Why is ultrasound classified as non-ionizing imaging?",
+      "options": {
+        "A": "It uses low-energy photons",
+        "B": "It uses mechanical pressure waves",
+        "C": "It relies on magnetic fields",
+        "D": "It measures radioactive decay"
+      },
+      "correct": "B",
+      "explanation": "The lecture introduces ultrasound as \"imaging with sound\", i.e. mechanical pressure waves rather than ionizing radiation."
+    },
+    {
+      "id": "us2",
+      "text": "What frequency range is typically used in diagnostic ultrasound?",
+      "options": {
+        "A": "20–20,000 Hz",
+        "B": "20 kHz–200 kHz",
+        "C": "2.5–20 MHz",
+        "D": "100–500 MHz"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Wave basics\" states: Diagnostic ultrasound operates roughly between 2.5 and 20 MHz."
+    },
+    {
+      "id": "us3",
+      "text": "What type of wave is primarily used for medical ultrasound imaging?",
+      "options": {
+        "A": "Transverse electromagnetic waves",
+        "B": "Transverse shear waves",
+        "C": "Longitudinal compressional waves",
+        "D": "Standing waves"
+      },
+      "correct": "C",
+      "explanation": "Slides on wave types explain that ultrasound imaging uses longitudinal compressional waves in tissue."
+    },
+    {
+      "id": "us4",
+      "text": "What physical quantity determines acoustic impedance?",
+      "options": {
+        "A": "Frequency only",
+        "B": "Density and speed of sound",
+        "C": "Wavelength only",
+        "D": "Attenuation coefficient"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Acoustic impedance\" defines Z = ρ · c, where ρ is density and c is speed of sound."
+    },
+    {
+      "id": "us5",
+      "text": "Why does bone appear bright in ultrasound images?",
+      "options": {
+        "A": "High absorption only",
+        "B": "Strong scattering",
+        "C": "Large acoustic impedance mismatch",
+        "D": "High Doppler shift"
+      },
+      "correct": "C",
+      "explanation": "Slides show that large impedance differences (e.g., soft tissue–bone) cause strong reflection."
+    },
+    {
+      "id": "us6",
+      "text": "What determines the fraction of reflected ultrasound at a tissue interface?",
+      "options": {
+        "A": "Frequency only",
+        "B": "Speed of sound only",
+        "C": "Difference in acoustic impedance",
+        "D": "Pulse repetition frequency"
+      },
+      "correct": "C",
+      "explanation": "The reflection coefficient R depends on the impedance difference Z₂ − Z₁, as shown in the specular reflection slides."
+    },
+    {
+      "id": "us7",
+      "text": "Why does ultrasound gel improve image quality?",
+      "options": {
+        "A": "It increases frequency",
+        "B": "It reduces impedance mismatch between probe and skin",
+        "C": "It amplifies echoes",
+        "D": "It reduces attenuation in tissue"
+      },
+      "correct": "B",
+      "explanation": "Gel removes the large air–skin impedance mismatch that would otherwise cause near-total reflection."
+    },
+    {
+      "id": "us8",
+      "text": "What causes speckle patterns in ultrasound images?",
+      "options": {
+        "A": "Electronic noise",
+        "B": "Pulse repetition artifacts",
+        "C": "Scattering from sub-wavelength structures",
+        "D": "Aliasing"
+      },
+      "correct": "C",
+      "explanation": "The wave scattering slide states that particles smaller than the wavelength cause diffuse scattering, producing speckle."
+    },
+    {
+      "id": "us9",
+      "text": "Why is attenuation frequency-dependent in ultrasound?",
+      "options": {
+        "A": "Lower frequencies scatter more",
+        "B": "Higher frequencies are absorbed more strongly",
+        "C": "Frequency changes tissue density",
+        "D": "Only bone absorbs sound"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Wave energy absorption\" shows attenuation α = α₀ fⁿ, increasing with frequency."
+    },
+    {
+      "id": "us10",
+      "text": "What trade-off exists when increasing ultrasound frequency?",
+      "options": {
+        "A": "Higher penetration but lower resolution",
+        "B": "Lower penetration but higher resolution",
+        "C": "Higher noise only",
+        "D": "Lower frame rate only"
+      },
+      "correct": "B",
+      "explanation": "Higher frequency improves resolution (shorter wavelength) but increases attenuation, reducing penetration."
+    },
+    {
+      "id": "us11",
+      "text": "What principle allows depth estimation in B-mode ultrasound?",
+      "options": {
+        "A": "Amplitude of echoes",
+        "B": "Phase shift",
+        "C": "Time-of-flight of echoes",
+        "D": "Doppler shift"
+      },
+      "correct": "C",
+      "explanation": "The pulse-echo principle uses echo return time to estimate axial depth."
+    },
+    {
+      "id": "us12",
+      "text": "Why is the speed of sound assumed constant in ultrasound imaging?",
+      "options": {
+        "A": "It is exactly the same in all tissues",
+        "B": "It simplifies reconstruction and beamforming",
+        "C": "It improves Doppler accuracy",
+        "D": "It reduces noise"
+      },
+      "correct": "B",
+      "explanation": "Beamforming assumes a constant speed of sound (~1540 m/s) to compute delays."
+    },
+    {
+      "id": "us13",
+      "text": "What is beamforming in ultrasound?",
+      "options": {
+        "A": "Filtering received echoes",
+        "B": "Focusing sound using delays across array elements",
+        "C": "Amplifying echoes",
+        "D": "Changing frequency"
+      },
+      "correct": "B",
+      "explanation": "Beamforming excites multiple elements with specific delays to create and focus beams."
+    },
+    {
+      "id": "us14",
+      "text": "Which beamforming method is considered the baseline approach?",
+      "options": {
+        "A": "DMAS",
+        "B": "Adaptive beamforming",
+        "C": "Delay-and-Sum (DAS)",
+        "D": "Matched filtering"
+      },
+      "correct": "C",
+      "explanation": "The lecture introduces Delay-And-Sum as the standard beamforming strategy."
+    },
+    {
+      "id": "us15",
+      "text": "What is the main limitation of DAS beamforming?",
+      "options": {
+        "A": "High computational cost",
+        "B": "Assumes homogeneous medium",
+        "C": "Low frame rate",
+        "D": "Poor axial resolution"
+      },
+      "correct": "B",
+      "explanation": "Advanced beamforming slides state that constant speed and homogeneity assumptions often do not hold."
+    },
+    {
+      "id": "us16",
+      "text": "Why does DMAS beamforming improve image quality?",
+      "options": {
+        "A": "It increases transmit power",
+        "B": "It correlates received signals",
+        "C": "It removes attenuation",
+        "D": "It increases penetration"
+      },
+      "correct": "B",
+      "explanation": "DMAS exploits correlation between channels, enhancing coherent signals."
+    },
+    {
+      "id": "us17",
+      "text": "What does the Point Spread Function (PSF) describe?",
+      "options": {
+        "A": "Noise distribution",
+        "B": "System response to a point scatterer",
+        "C": "Attenuation profile",
+        "D": "Beam steering angle"
+      },
+      "correct": "B",
+      "explanation": "The PSF is described as the system’s response to a point scatterer."
+    },
+    {
+      "id": "us18",
+      "text": "What does FWHM measure in ultrasound imaging?",
+      "options": {
+        "A": "Penetration depth",
+        "B": "Signal-to-noise ratio",
+        "C": "Spatial resolution",
+        "D": "Attenuation"
+      },
+      "correct": "C",
+      "explanation": "Full Width at Half Maximum is used to quantify axial and lateral resolution."
+    },
+    {
+      "id": "us19",
+      "text": "Why is apodization applied in beamforming?",
+      "options": {
+        "A": "Increase main lobe width",
+        "B": "Reduce side lobe levels",
+        "C": "Increase penetration",
+        "D": "Reduce attenuation"
+      },
+      "correct": "B",
+      "explanation": "Apodization weights reduce side lobes at the cost of slightly reduced resolution."
+    },
+    {
+      "id": "us20",
+      "text": "Which imaging strategy enables ultrafast ultrasound?",
+      "options": {
+        "A": "Scanline imaging",
+        "B": "Multifocal imaging",
+        "C": "Planewave imaging",
+        "D": "Single-element imaging"
+      },
+      "correct": "C",
+      "explanation": "Planewave imaging forms an entire image from a single transmit, enabling ultrafast acquisition."
+    },
+    {
+      "id": "us21",
+      "text": "Why does planewave imaging initially have lower image quality?",
+      "options": {
+        "A": "Lower frequency",
+        "B": "Unfocused transmit wave",
+        "C": "Lower sampling rate",
+        "D": "Higher attenuation"
+      },
+      "correct": "B",
+      "explanation": "Unfocused transmit produces lower receive amplitudes, as shown in the planewave vs scanline slides."
+    },
+    {
+      "id": "us22",
+      "text": "How is planewave image quality typically improved?",
+      "options": {
+        "A": "Higher gain",
+        "B": "Lower frequency",
+        "C": "Compounding multiple steered waves",
+        "D": "Longer pulses"
+      },
+      "correct": "C",
+      "explanation": "Multiple steered planewaves are combined to improve resolution and SNR."
+    },
+    {
+      "id": "us23",
+      "text": "What does Time Gain Compensation (TGC) correct for?",
+      "options": {
+        "A": "Beam divergence",
+        "B": "Attenuation with depth",
+        "C": "Speckle noise",
+        "D": "Phase errors"
+      },
+      "correct": "B",
+      "explanation": "TGC compensates for increasing attenuation as sound travels deeper into tissue."
+    },
+    {
+      "id": "us24",
+      "text": "Why is log-compression applied in B-mode imaging?",
+      "options": {
+        "A": "Reduce noise",
+        "B": "Increase penetration",
+        "C": "Reduce dynamic range for display",
+        "D": "Enhance Doppler signal"
+      },
+      "correct": "C",
+      "explanation": "Log-compression maps large dynamic ranges into displayable grayscale values."
+    },
+    {
+      "id": "us25",
+      "text": "What physical effect enables Doppler ultrasound?",
+      "options": {
+        "A": "Wave attenuation",
+        "B": "Frequency shift due to motion",
+        "C": "Reflection coefficient",
+        "D": "Acoustic impedance"
+      },
+      "correct": "B",
+      "explanation": "The Doppler equation relates frequency shift to particle velocity."
+    },
+    {
+      "id": "us26",
+      "text": "Why does Doppler angle matter?",
+      "options": {
+        "A": "It affects attenuation",
+        "B": "It affects echo amplitude",
+        "C": "Velocity estimation depends on cos(θ)",
+        "D": "It changes frequency"
+      },
+      "correct": "C",
+      "explanation": "The Doppler equation includes a cos(θ) term, making angle estimation critical."
+    },
+    {
+      "id": "us27",
+      "text": "Which transducer type is best suited for deep abdominal imaging?",
+      "options": {
+        "A": "Linear array",
+        "B": "Curvilinear array",
+        "C": "Radial probe",
+        "D": "Intravascular probe"
+      },
+      "correct": "B",
+      "explanation": "Curvilinear arrays operate at lower frequencies, providing higher penetration."
+    },
+    {
+      "id": "us28",
+      "text": "Which probe is used for cardiac imaging through small acoustic windows?",
+      "options": {
+        "A": "Linear array",
+        "B": "Curvilinear array",
+        "C": "Phased array",
+        "D": "Radial probe"
+      },
+      "correct": "C",
+      "explanation": "Phased arrays allow electronic beam steering through small acoustic windows."
+    },
+    {
+      "id": "us29",
+      "text": "Why do intravascular probes operate at very high frequencies?",
+      "options": {
+        "A": "Increase penetration",
+        "B": "Improve axial resolution at shallow depth",
+        "C": "Reduce attenuation",
+        "D": "Enable Doppler imaging"
+      },
+      "correct": "B",
+      "explanation": "Intravascular probes sacrifice penetration for very high spatial resolution."
+    },
+    {
+      "id": "us30",
+      "text": "What limits lateral resolution in ultrasound imaging?",
+      "options": {
+        "A": "Pulse length",
+        "B": "Beam width",
+        "C": "Attenuation",
+        "D": "Sampling rate"
+      },
+      "correct": "B",
+      "explanation": "Lateral resolution depends on beam width, governed by focusing and aperture."
+    },
+    {
+      "id": "us31",
+      "text": "What limits axial resolution?",
+      "options": {
+        "A": "Beam width",
+        "B": "Pulse length",
+        "C": "Array geometry",
+        "D": "Scanline spacing"
+      },
+      "correct": "B",
+      "explanation": "Shorter pulses improve axial resolution by reducing echo overlap."
+    },
+    {
+      "id": "us32",
+      "text": "Why is ultrasound well suited for real-time imaging?",
+      "options": {
+        "A": "Low computational cost",
+        "B": "No reconstruction required",
+        "C": "Fast pulse-echo cycles",
+        "D": "No attenuation"
+      },
+      "correct": "C",
+      "explanation": "Ultrasound supports high frame rates due to rapid transmit–receive cycles."
+    },
+    {
+      "id": "us33",
+      "text": "What is a major limitation of ultrasound imaging?",
+      "options": {
+        "A": "Ionizing radiation",
+        "B": "Poor soft-tissue contrast",
+        "C": "Operator dependence",
+        "D": "High cost"
+      },
+      "correct": "C",
+      "explanation": "Clinical practice highlights strong operator dependence in ultrasound."
+    },
+    {
+      "id": "us34",
+      "text": "Why is bone difficult to image beyond its surface?",
+      "options": {
+        "A": "Low reflection",
+        "B": "High absorption and reflection",
+        "C": "Low impedance",
+        "D": "Low frequency"
+      },
+      "correct": "B",
+      "explanation": "Bone strongly reflects and absorbs ultrasound, preventing penetration."
+    },
+    {
+      "id": "us35",
+      "text": "What is the overarching message of the ultrasound lecture?",
+      "options": {
+        "A": "Ultrasound replaces CT and MRI",
+        "B": "Physics-driven trade-offs govern image quality",
+        "C": "Ultrasound is purely qualitative",
+        "D": "Beamforming is optional"
+      },
+      "correct": "B",
+      "explanation": "The lecture repeatedly emphasizes trade-offs between resolution, penetration, and frame rate."
+    }
+  ]
+}

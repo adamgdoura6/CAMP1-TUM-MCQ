@@ -1,0 +1,136 @@
+{
+  "questions": [
+    {
+      "id": "q32",
+      "text": "Why does increasing X-ray photon energy generally reduce image contrast between soft tissues?",
+      "options": {
+        "A": "Higher energy photons increase photoelectric absorption differences",
+        "B": "Higher energy photons reduce Compton scattering",
+        "C": "Higher energy photons reduce differential attenuation",
+        "D": "Higher energy photons increase detector efficiency"
+      },
+      "correct": "C",
+      "explanation": "From the slides on interaction with matter: image contrast arises from differences in attenuation. At higher energies, attenuation coefficients of different soft tissues become more similar, reducing contrast."
+    },
+    {
+      "id": "q33",
+      "text": "Why is photoelectric absorption more useful than Compton scattering for generating image contrast in medical X-ray imaging?",
+      "options": {
+        "A": "Photoelectric absorption is elastic",
+        "B": "Photoelectric absorption correlates with electron density",
+        "C": "Compton scattering dominates at low energies",
+        "D": "Compton scattering increases contrast"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Physics — Photoelectric absorption\": \"Correlates with the electron density. Thus the more dense the material the stronger the absorption.\" This density dependence creates contrast between tissues."
+    },
+    {
+      "id": "q34",
+      "text": "Why does bone appear bright in X-ray images while air appears dark?",
+      "options": {
+        "A": "Bone emits X-rays while air absorbs them",
+        "B": "Bone causes Compton scattering while air causes absorption",
+        "C": "Bone has higher electron density leading to stronger absorption",
+        "D": "Air reflects X-rays"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Physics — Photoelectric absorption\": \"Bones absorb more X-rays – soft tissue absorb less.\" Air absorbs almost none, so many photons reach the detector."
+    },
+    {
+      "id": "q35",
+      "text": "Why are rotating anodes necessary in modern X-ray tubes?",
+      "options": {
+        "A": "To increase photon energy",
+        "B": "To focus the electron beam",
+        "C": "To distribute heat over a larger surface",
+        "D": "To reduce Compton scattering"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Physics — Modern tubes\": \"The anode degrades over time. Thus, modern tubes use line focus cathodes and rotating anodes.\" Rotation spreads heat and reduces damage."
+    },
+    {
+      "id": "q36",
+      "text": "Why can photon-counting detectors filter out electronic noise more effectively than energy-integrating detectors?",
+      "options": {
+        "A": "They integrate over longer exposure times",
+        "B": "They measure phase instead of intensity",
+        "C": "They apply an energy threshold per photon",
+        "D": "They use scintillators"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Photon counting detectors\": \"Energy of each photon is recorded – Allows to filter out electronic noise.\" Noise events typically fall below the energy threshold."
+    },
+    {
+      "id": "q37",
+      "text": "Why are energy-integrating detectors unable to provide spectral information?",
+      "options": {
+        "A": "They discard low-energy photons",
+        "B": "They sum all photon energies together",
+        "C": "They only detect visible light",
+        "D": "They operate only in fluoroscopy"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Energy integrating detectors\": \"Intensity reflects the integrated energy of all photons over a certain amount of time.\" Individual photon energies are lost."
+    },
+    {
+      "id": "q38",
+      "text": "Why were early phase-contrast X-ray imaging methods impractical for clinical use?",
+      "options": {
+        "A": "They required excessive radiation dose",
+        "B": "They required synchrotron radiation",
+        "C": "They could not detect absorption",
+        "D": "They required MRI scanners"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Phase-contrast X-ray imaging\": \"Classic approaches require a synchrotron and monochromatic X-rays.\" This limited clinical feasibility."
+    },
+    {
+      "id": "q39",
+      "text": "What physical phenomenon does dark-field X-ray imaging primarily measure?",
+      "options": {
+        "A": "Photoelectric absorption",
+        "B": "Large-angle scattering",
+        "C": "Small-angle scattering caused by microstructures",
+        "D": "Phase shifts only"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Dark-field signal\": dark-field imaging is sensitive to \"small-angle scattering\" from unresolved microstructures."
+    },
+    {
+      "id": "q40",
+      "text": "Why does Beer–Lambert law form the mathematical basis of CT reconstruction?",
+      "options": {
+        "A": "It models phase shifts in X-rays",
+        "B": "It relates attenuation to path integrals",
+        "C": "It models Compton scattering only",
+        "D": "It applies only to visible light"
+      },
+      "correct": "B",
+      "explanation": "Slides \"Mathematics — Interaction with matter\": attenuation is expressed as an integral of linear attenuation coefficients along a path, which is exactly what CT reconstructs."
+    },
+    {
+      "id": "q41",
+      "text": "Why is Compton scattering problematic for image quality?",
+      "options": {
+        "A": "It increases absorption contrast",
+        "B": "It removes photons from the beam direction",
+        "C": "It creates additional ionization",
+        "D": "It increases spatial resolution"
+      },
+      "correct": "B",
+      "explanation": "From the interaction slides: Compton scattering is inelastic and deflects photons, causing them to reach the detector at incorrect positions, reducing image contrast."
+    },
+    {
+      "id": "q42",
+      "text": "Why can phase-contrast imaging reveal structures invisible in absorption-based X-ray images?",
+      "options": {
+        "A": "Phase effects are stronger in dense materials",
+        "B": "Phase changes occur even when absorption differences are small",
+        "C": "Phase-contrast uses higher radiation dose",
+        "D": "Phase replaces attenuation physics"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Phase-contrast X-ray imaging\": \"Electromagnetic waves have more properties than just intensity – Waves also have a phase.\" Phase variations can be detected even when absorption is weak."
+    }
+  ]
+}

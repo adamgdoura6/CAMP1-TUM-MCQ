@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "mri1",
+      "text": "Which fundamental principle distinguishes MRI from CT?",
+      "options": {
+        "A": "MRI uses ionizing radiation",
+        "B": "MRI is based on radiofrequency excitation of nuclei",
+        "C": "MRI measures photon attenuation",
+        "D": "MRI detects radioactive decay"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Principles of Tomographic Imaging\" shows MRI using radiofrequency excitation, unlike CT which is transmission-based using X-rays."
+    },
+    {
+      "id": "mri2",
+      "text": "In which part of the electromagnetic spectrum does MRI operate?",
+      "options": {
+        "A": "X-ray range",
+        "B": "Infrared",
+        "C": "Radiofrequency range",
+        "D": "Visible light"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Electromagnetic Spectrum: MRI, X-Ray, Optical\" places MR imaging in the radiofrequency range."
+    },
+    {
+      "id": "mri3",
+      "text": "What is the primary motivation for using MRI in clinical imaging?",
+      "options": {
+        "A": "Lower cost",
+        "B": "Higher speed than CT",
+        "C": "No ionizing radiation and excellent biological contrast",
+        "D": "Easier image reconstruction"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Motivation – Why MRI?\": lists \"No ionizing radiation\" and \"High biological contrast\" as key advantages."
+    },
+    {
+      "id": "mri4",
+      "text": "Who first described the principle of nuclear magnetic resonance?",
+      "options": {
+        "A": "Paul Lauterbur",
+        "B": "Peter Mansfield",
+        "C": "Felix Bloch and Edward Purcell",
+        "D": "Richard Ernst"
+      },
+      "correct": "C",
+      "explanation": "The \"History\" slide states: \"1946 Felix Bloch and Edward Purcell: principle of nuclear magnetic resonance.\""
+    },
+    {
+      "id": "mri5",
+      "text": "What key contribution did Paul Lauterbur make to MRI?",
+      "options": {
+        "A": "Spin echo imaging",
+        "B": "Spatial encoding using gradients",
+        "C": "Fast EPI imaging",
+        "D": "Parallel imaging"
+      },
+      "correct": "B",
+      "explanation": "The history slide credits Paul Lauterbur with \"spatial encoding\" and NMR zeugmatography."
+    },
+    {
+      "id": "mri6",
+      "text": "What physical property allows certain nuclei to be detected by MRI?",
+      "options": {
+        "A": "Electric charge",
+        "B": "Magnetic moment",
+        "C": "Mass density",
+        "D": "Photon emission"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Basic NMR Physics 1\": \"Quantum physics tells us that an atomic nucleus has a magnetic moment.\""
+    },
+    {
+      "id": "mri7",
+      "text": "What determines the Larmor frequency ω?",
+      "options": {
+        "A": "Temperature",
+        "B": "Spin density",
+        "C": "Magnetic field strength and gyromagnetic ratio",
+        "D": "RF pulse duration"
+      },
+      "correct": "C",
+      "explanation": "The slide states: \"ω = γ · B\" where γ is the gyromagnetic ratio and B the magnetic field."
+    },
+    {
+      "id": "mri8",
+      "text": "Why is hydrogen (¹H) the most important nucleus for MRI?",
+      "options": {
+        "A": "It has the highest mass",
+        "B": "It has the strongest magnetic field",
+        "C": "It is abundant in biological tissue",
+        "D": "It emits gamma rays"
+      },
+      "correct": "C",
+      "explanation": "The spatial encoding slides emphasize that MRI relies mainly on water protons due to their abundance."
+    },
+    {
+      "id": "mri9",
+      "text": "Why is the net magnetization in MRI very small?",
+      "options": {
+        "A": "Spins cancel completely",
+        "B": "Only a small population difference exists",
+        "C": "RF pulses destroy magnetization",
+        "D": "Magnetic fields are weak"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Basic NMR Physics 2\": \"Under typical conditions, the net excess is only in the ppm range.\""
+    },
+    {
+      "id": "mri10",
+      "text": "What role does the RF pulse play in MRI?",
+      "options": {
+        "A": "Detects emitted photons",
+        "B": "Aligns spins permanently",
+        "C": "Excites spins to a higher energy state",
+        "D": "Generates gradients"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Basic NMR Physics 3\": external RF \"brings some spins into the anti-parallel state.\""
+    },
+    {
+      "id": "mri11",
+      "text": "What is detected by the MRI receiver coil?",
+      "options": {
+        "A": "X-ray photons",
+        "B": "RF energy emitted by relaxing spins",
+        "C": "Gamma radiation",
+        "D": "Acoustic waves"
+      },
+      "correct": "B",
+      "explanation": "The slide notes that emitted quanta are detected \"by an antenna.\""
+    },
+    {
+      "id": "mri12",
+      "text": "What does T1 relaxation describe?",
+      "options": {
+        "A": "Loss of phase coherence",
+        "B": "Recovery of longitudinal magnetization",
+        "C": "Spin-spin interactions",
+        "D": "Signal dephasing only"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Relaxation T1\": T1 is the longitudinal (spin-lattice) relaxation."
+    },
+    {
+      "id": "mri13",
+      "text": "What does T2 relaxation describe?",
+      "options": {
+        "A": "Energy transfer to the lattice",
+        "B": "Longitudinal recovery",
+        "C": "Loss of transverse phase coherence",
+        "D": "RF excitation strength"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Relaxation 1\": T2 corresponds to transversal (spin-spin) relaxation."
+    },
+    {
+      "id": "mri14",
+      "text": "What is Free Induction Decay (FID)?",
+      "options": {
+        "A": "Signal amplification",
+        "B": "Relaxation-induced signal decay after excitation",
+        "C": "Gradient-induced echo",
+        "D": "Noise artifact"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Relaxation 4\": \"What we observe is called free induction decay (FID).\""
+    },
+    {
+      "id": "mri15",
+      "text": "Why is a spin-echo sequence used?",
+      "options": {
+        "A": "To suppress T1 effects",
+        "B": "To reverse dephasing caused by field inhomogeneities",
+        "C": "To shorten acquisition time",
+        "D": "To eliminate gradients"
+      },
+      "correct": "B",
+      "explanation": "Slide \"NMR Spectroscopy\": \"Dephasing – reversal by spin echo!\""
+    },
+    {
+      "id": "mri16",
+      "text": "Which RF pulses are used in a classic spin-echo sequence?",
+      "options": {
+        "A": "45° and 90°",
+        "B": "90° and 180°",
+        "C": "180° only",
+        "D": "Multiple 90° pulses"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Spin-Echo-Sequence\" explicitly shows a 90° pulse followed by a 180° pulse."
+    },
+    {
+      "id": "mri17",
+      "text": "What enables spatial encoding in MRI?",
+      "options": {
+        "A": "RF amplitude",
+        "B": "Magnetic field gradients",
+        "C": "Contrast agents",
+        "D": "Relaxation times"
+      },
+      "correct": "B",
+      "explanation": "The \"Spatial Encoding\" slides explain that gradients make resonance frequency position-dependent."
+    },
+    {
+      "id": "mri18",
+      "text": "What is the purpose of slice selection?",
+      "options": {
+        "A": "Improve contrast",
+        "B": "Limit RF power",
+        "C": "Excite spins only at a specific z-position",
+        "D": "Reduce noise"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Spatial Encoding – Selecting a slice\": only spins at a specific z position are excited."
+    },
+    {
+      "id": "mri19",
+      "text": "What does phase encoding achieve?",
+      "options": {
+        "A": "Frequency separation",
+        "B": "Spatial encoding via phase shifts",
+        "C": "Slice thickness control",
+        "D": "Noise suppression"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Phase encoding\": spins acquire position-dependent phase shifts."
+    },
+    {
+      "id": "mri20",
+      "text": "What does frequency encoding correspond to?",
+      "options": {
+        "A": "Amplitude modulation",
+        "B": "Phase shifts",
+        "C": "Position-dependent frequency during readout",
+        "D": "RF pulse shaping"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Frequency encoding\": water molecules emit radiation with spatially varying frequency."
+    },
+    {
+      "id": "mri21",
+      "text": "What is k-space?",
+      "options": {
+        "A": "Image space",
+        "B": "Frequency-domain representation of spatial encoding",
+        "C": "Noise spectrum",
+        "D": "Gradient hardware layout"
+      },
+      "correct": "B",
+      "explanation": "Slides on \"K-Space: Image Contrast & Resolution\" describe k-space as the Fourier domain."
+    },
+    {
+      "id": "mri22",
+      "text": "Which part of k-space mainly determines image contrast?",
+      "options": {
+        "A": "Outer regions",
+        "B": "Center",
+        "C": "Edges only",
+        "D": "Corners"
+      },
+      "correct": "B",
+      "explanation": "The k-space slides indicate contrast information is concentrated in the center."
+    },
+    {
+      "id": "mri23",
+      "text": "Which part of k-space mainly determines spatial resolution?",
+      "options": {
+        "A": "Center",
+        "B": "Low frequencies",
+        "C": "Outer regions",
+        "D": "DC component"
+      },
+      "correct": "C",
+      "explanation": "Resolution is linked to high spatial frequencies located at the outer k-space."
+    },
+    {
+      "id": "mri24",
+      "text": "What mathematical operation reconstructs the MR image from k-space?",
+      "options": {
+        "A": "Radon transform",
+        "B": "Inverse FFT",
+        "C": "Convolution",
+        "D": "Backprojection"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Image Reconstruction\": a 2D FFT yields the desired image."
+    },
+    {
+      "id": "mri25",
+      "text": "Why does MRI provide high biological contrast?",
+      "options": {
+        "A": "Due to photon attenuation",
+        "B": "Due to tissue-specific T1 and T2 values",
+        "C": "Due to scattering",
+        "D": "Due to density differences"
+      },
+      "correct": "B",
+      "explanation": "Slides on contrast mechanisms state T1 and T2 values are tissue-specific and reflect biochemical properties."
+    },
+    {
+      "id": "mri26",
+      "text": "What is the effect of gadolinium-based contrast agents?",
+      "options": {
+        "A": "Increase T2 only",
+        "B": "Reduce T1 relaxation times",
+        "C": "Suppress signal",
+        "D": "Increase proton density"
+      },
+      "correct": "B",
+      "explanation": "Slides \"Contrast Mechanisms\": Gd-DTPA \"reduce locally the T1 times.\""
+    },
+    {
+      "id": "mri27",
+      "text": "What distinguishes gradient echo from spin echo sequences?",
+      "options": {
+        "A": "Use of RF pulses only",
+        "B": "Refocusing of field inhomogeneities",
+        "C": "Gradient echo does not refocus field inhomogeneities",
+        "D": "Lower speed"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Gradient Echo\": states gradient echo does not refocus main field inhomogeneity."
+    },
+    {
+      "id": "mri28",
+      "text": "What is a major disadvantage of gradient echo imaging?",
+      "options": {
+        "A": "Low contrast",
+        "B": "High dose",
+        "C": "Susceptibility artifacts",
+        "D": "Long scan times"
+      },
+      "correct": "C",
+      "explanation": "The slide lists artifacts \"especially between haemorrhages and normal tissue.\""
+    },
+    {
+      "id": "mri29",
+      "text": "What causes foldover (aliasing) artifacts?",
+      "options": {
+        "A": "Insufficient RF power",
+        "B": "Phase encoding ambiguity outside FOV",
+        "C": "T1 relaxation",
+        "D": "Gradient nonlinearity"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Artefacts – Foldover\": signals outside the FOV are mapped back incorrectly."
+    },
+    {
+      "id": "mri30",
+      "text": "What is the main idea of SENSE parallel imaging?",
+      "options": {
+        "A": "Increase gradient strength",
+        "B": "Reduce RF power",
+        "C": "Reduce phase encoding steps using coil sensitivities",
+        "D": "Increase field strength"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Technical Advances: SENSE\": fewer phase encoding steps are compensated using coil sensitivity."
+    },
+    {
+      "id": "mri31",
+      "text": "Why does parallel imaging reduce scan time?",
+      "options": {
+        "A": "Shorter TR",
+        "B": "Fewer RF pulses",
+        "C": "Fewer phase encoding steps",
+        "D": "Lower resolution"
+      },
+      "correct": "C",
+      "explanation": "SENSE reduces acquisition time \"by the amount of coil elements.\""
+    },
+    {
+      "id": "mri32",
+      "text": "Why is MRI called a \"physic’s sensor for biological properties\"?",
+      "options": {
+        "A": "It measures density",
+        "B": "It measures attenuation",
+        "C": "It reflects tissue biochemistry via relaxation",
+        "D": "It detects radioactive tracers"
+      },
+      "correct": "C",
+      "explanation": "This phrase appears explicitly in the \"Take home messages\" slide."
+    },
+    {
+      "id": "mri33",
+      "text": "What does \"white is not white and black is not black\" mean in MRI?",
+      "options": {
+        "A": "MRI has low contrast",
+        "B": "Contrast depends on acquisition parameters",
+        "C": "MRI images are inverted",
+        "D": "Noise dominates"
+      },
+      "correct": "B",
+      "explanation": "The slide emphasizes that contrast can be changed arbitrarily using TR, TE, and sequences."
+    },
+    {
+      "id": "mri34",
+      "text": "Why can MRI be scaled from mice to humans?",
+      "options": {
+        "A": "Same reconstruction algorithm",
+        "B": "Flexible contrast and field strengths",
+        "C": "Same RF coils",
+        "D": "Same gradients"
+      },
+      "correct": "B",
+      "explanation": "The final take-home message states MRI is \"scalable from mice to men.\""
+    },
+    {
+      "id": "mri35",
+      "text": "What overarching message does the lecture convey about MRI?",
+      "options": {
+        "A": "MRI replaces all other modalities",
+        "B": "MRI is mainly qualitative",
+        "C": "MRI offers almost arbitrary contrast through physics",
+        "D": "MRI is limited by hardware"
+      },
+      "correct": "C",
+      "explanation": "The final slide highlights \"Almost arbitrary contrast variable\" as a key message."
+    }
+  ]
+}

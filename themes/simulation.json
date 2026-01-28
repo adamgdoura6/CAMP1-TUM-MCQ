@@ -1,0 +1,79 @@
+{
+  "questions": [
+    {
+      "id": "pred1",
+      "text": "What physical quantity is reconstructed in CT, PET, and MRI respectively?",
+      "answer": "CT reconstructs the X-ray attenuation coefficient (μ). PET reconstructs the tracer activity distribution (radioactivity concentration). MRI reconstructs signal intensity related to proton density and relaxation times (T1, T2)."
+    },
+    {
+      "id": "pred2",
+      "text": "Why does PET generally have lower spatial resolution than CT?",
+      "answer": "PET resolution is limited by positron range, annihilation physics, detector size, and lack of physical collimation, whereas CT uses tightly collimated X-ray beams and high-resolution detectors."
+    },
+    {
+      "id": "pred3",
+      "text": "Explain why ultrasound image quality depends strongly on operator skill.",
+      "answer": "Ultrasound acquisition depends on probe position, angle, pressure, and parameter settings such as frequency and gain, all of which directly affect beam propagation and echo formation."
+    },
+    {
+      "id": "pred4",
+      "text": "Two ultrasound images are acquired at 3 MHz and 12 MHz. Which one has higher penetration and why?",
+      "answer": "The 3 MHz image has higher penetration because attenuation increases with frequency, while the 12 MHz image provides higher spatial resolution but lower penetration."
+    },
+    {
+      "id": "pred5",
+      "text": "Why is speckle noise fundamentally different from electronic noise in ultrasound?",
+      "answer": "Speckle arises from coherent interference of scattered ultrasound waves and is signal-dependent, whereas electronic noise is random and independent of tissue structure."
+    },
+    {
+      "id": "pred6",
+      "text": "Explain why Non-Local Means filtering preserves edges better than mean filtering in ultrasound.",
+      "answer": "Non-Local Means uses patch similarity rather than spatial proximity, allowing it to average similar structures while preserving edges, whereas mean filtering blurs edges by averaging local neighbors."
+    },
+    {
+      "id": "pred7",
+      "text": "Why is normalized cross-correlation preferred over sum of absolute differences for speckle tracking?",
+      "answer": "Normalized cross-correlation is robust to intensity and gain changes, which commonly occur in ultrasound due to attenuation and system settings, while SAD is sensitive to brightness variations."
+    },
+    {
+      "id": "pred8",
+      "text": "What does the Dice score measure, and when can it be misleading?",
+      "answer": "The Dice score measures volumetric overlap between segmentations. It can be misleading when boundary accuracy is important, as large overlaps can hide poor boundary alignment."
+    },
+    {
+      "id": "pred9",
+      "text": "Why does filtered backprojection require a high-pass (ramp) filter?",
+      "answer": "Backprojection overemphasizes low frequencies, causing image blurring. The ramp filter compensates by amplifying high frequencies to restore spatial resolution."
+    },
+    {
+      "id": "pred10",
+      "text": "Explain why CT is usually the first imaging modality in acute stroke.",
+      "answer": "Non-contrast CT is fast, widely available, and reliably excludes intracranial hemorrhage, which is critical before initiating thrombolytic therapy."
+    },
+    {
+      "id": "pred11",
+      "text": "Why is the BOLD signal in fMRI considered an indirect measure of neural activity?",
+      "answer": "The BOLD signal reflects changes in blood oxygenation caused by vascular response to neural activity, not the neural firing itself, and occurs with a temporal delay."
+    },
+    {
+      "id": "pred12",
+      "text": "Why does MRI allow almost arbitrary contrast, while CT does not?",
+      "answer": "MRI contrast can be controlled via sequence parameters such as TR, TE, and flip angle, as well as tissue relaxation properties, whereas CT contrast is mainly determined by X-ray attenuation and material density."
+    },
+    {
+      "id": "pred13",
+      "text": "What is the main trade-off introduced by collimation in SPECT?",
+      "answer": "Collimation improves spatial resolution by restricting photon direction but significantly reduces sensitivity by discarding most emitted photons."
+    },
+    {
+      "id": "pred14",
+      "text": "Why are iterative reconstruction methods particularly suited for low-dose CT or PET?",
+      "answer": "Iterative methods explicitly model noise statistics and system physics, allowing acceptable image quality from fewer photons or projections compared to analytical methods."
+    },
+    {
+      "id": "pred15",
+      "text": "Why are confidence maps useful in ultrasound-guided robotics or tracking?",
+      "answer": "Confidence maps identify regions where the ultrasound signal is reliable, allowing algorithms or robots to ignore shadowed or unreliable areas and avoid tracking noise instead of anatomy."
+    }
+  ]
+}

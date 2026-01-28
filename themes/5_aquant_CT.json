@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "qctq1",
+      "text": "What is the central question raised by the slide \"Image based diagnosis = looking at images?\"",
+      "options": {
+        "A": "Whether CT images are high resolution enough",
+        "B": "Whether diagnosis should rely only on visual inspection",
+        "C": "Whether CT should be replaced by MRI",
+        "D": "Whether segmentation is required"
+      },
+      "correct": "B",
+      "explanation": "The slide explicitly questions whether diagnosis should be limited to visual inspection, motivating a shift \"from imaging to quantification.\""
+    },
+    {
+      "id": "qctq2",
+      "text": "Why is osteoporosis considered clinically relevant beyond bone fractures?",
+      "options": {
+        "A": "It causes pain in all patients",
+        "B": "It increases relative mortality risk",
+        "C": "It always leads to immobility",
+        "D": "It is easily detectable visually"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Relative mortality risk after osteoporotic fractures\" shows increased age-adjusted mortality, especially for hip and spine fractures."
+    },
+    {
+      "id": "qctq3",
+      "text": "What trend is shown in the slide \"Average development of BMD over the course of age\"?",
+      "options": {
+        "A": "BMD increases with age",
+        "B": "BMD is constant throughout life",
+        "C": "BMD decreases with age, increasing fracture risk",
+        "D": "Only males show BMD loss"
+      },
+      "correct": "C",
+      "explanation": "The plot shows decreasing BMD with age, crossing into an osteoporosis range associated with \"significantly increased fracture risk.\""
+    },
+    {
+      "id": "qctq4",
+      "text": "What is a major limitation of DEXA highlighted in the lecture?",
+      "options": {
+        "A": "High radiation dose",
+        "B": "Low availability",
+        "C": "Frequent misdiagnosis despite fractures",
+        "D": "Inability to image the spine"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Misdiagnosis with DXA\" shows that many patients with osteoporotic fractures still have normal BMD or osteopenia by DEXA."
+    },
+    {
+      "id": "qctq5",
+      "text": "What does \"opportunistic bone densitometry\" mean?",
+      "options": {
+        "A": "Screening only high-risk patients",
+        "B": "Using dedicated QCT scans",
+        "C": "Extracting BMD from existing CT data",
+        "D": "Replacing DEXA with MRI"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Opportunistic bone densitometry\" explicitly states: \"BMD from existing CT data.\""
+    },
+    {
+      "id": "qctq6",
+      "text": "Why are corrections necessary when estimating BMD from CT?",
+      "options": {
+        "A": "Because HU values are always wrong",
+        "B": "Because HU-to-BMD depends on scanner and acquisition",
+        "C": "Because CT cannot measure density",
+        "D": "Because segmentation is imperfect"
+      },
+      "correct": "B",
+      "explanation": "The slide \"BMD with p.v. KM\" lists \"Scanner specific: HU → BMD\" and dependence on tube voltage and contrast agent."
+    },
+    {
+      "id": "qctq7",
+      "text": "What is the approximate HU error introduced by portal venous contrast?",
+      "options": {
+        "A": "+20 HU",
+        "B": "-5 HU",
+        "C": "-20 HU",
+        "D": "-50 HU"
+      },
+      "correct": "C",
+      "explanation": "The slide explicitly states: \"Portal venous: -20 HU.\""
+    },
+    {
+      "id": "qctq8",
+      "text": "Why does the lecture state \"No follow-up examinations!\" for opportunistic BMD?",
+      "options": {
+        "A": "CT dose is too high",
+        "B": "Segmentation is unreliable",
+        "C": "Measurement error can reach 3–20%",
+        "D": "HU values cannot be calibrated"
+      },
+      "correct": "C",
+      "explanation": "The slide lists \"Error: Approx. 3–20% ⇒ No follow-up examinations!\" due to variability."
+    },
+    {
+      "id": "qctq9",
+      "text": "Which calibration strategies are shown for HU → BMD conversion?",
+      "options": {
+        "A": "Manual and automatic",
+        "B": "Internal, asynchronous, synchronous",
+        "C": "Linear and nonlinear",
+        "D": "Global and local"
+      },
+      "correct": "B",
+      "explanation": "The slide \"HU → BMD Calibration\" explicitly lists internal, asynchronous, and synchronous calibration."
+    },
+    {
+      "id": "qctq10",
+      "text": "Which acquisition parameter has only a small influence on BMD estimation?",
+      "options": {
+        "A": "Tube voltage",
+        "B": "Patient size",
+        "C": "Reconstruction kernel",
+        "D": "Contrast phase"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Recon Kernel: small influence\" explicitly highlights the minor effect."
+    },
+    {
+      "id": "qctq11",
+      "text": "Which factor must \"MUST be taken into account\" according to the lecture?",
+      "options": {
+        "A": "Table height",
+        "B": "Tube voltage",
+        "C": "Slice thickness",
+        "D": "Reconstruction kernel"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Sources of error during measurement: Tube voltage\" states in red: \"Tube voltage MUST be taken into account!\""
+    },
+    {
+      "id": "qctq12",
+      "text": "Why is opportunistic screening attractive at a population level?",
+      "options": {
+        "A": "It requires new CT scans",
+        "B": "It reduces scan time",
+        "C": "It leverages large-scale existing data",
+        "D": "It eliminates radiation exposure"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Large scale data\" highlights \"538,946 CT examinations\" enabling opportunistic screening."
+    },
+    {
+      "id": "qctq13",
+      "text": "Which diseases are explicitly listed as targets for opportunistic screening?",
+      "options": {
+        "A": "Stroke only",
+        "B": "Osteoporosis only",
+        "C": "Multiple diseases including fatty liver and heart disease",
+        "D": "Only neurological diseases"
+      },
+      "correct": "C",
+      "explanation": "The slide \"General idea: opportunistic screening\" lists fatty liver, osteoporosis, lung cancer, heart disease, and others."
+    },
+    {
+      "id": "qctq14",
+      "text": "Why is stroke described as a time-critical disease?",
+      "options": {
+        "A": "Because imaging is slow",
+        "B": "Because tissue damage progresses over time",
+        "C": "Because treatment is delayed by imaging",
+        "D": "Because CT is inaccurate"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Time is Brain\" shows progression from cytotoxic edema to cell death over time."
+    },
+    {
+      "id": "qctq15",
+      "text": "What is the primary goal of acute stroke therapy?",
+      "options": {
+        "A": "Reduce edema",
+        "B": "Restore perfusion",
+        "C": "Lower blood pressure",
+        "D": "Remove hemorrhage"
+      },
+      "correct": "B",
+      "explanation": "The slide explicitly states: \"Therapeutic Goal: Restore Perfusion.\""
+    },
+    {
+      "id": "qctq16",
+      "text": "Why is non-contrast CT the first imaging step in stroke?",
+      "options": {
+        "A": "To detect vessel occlusion",
+        "B": "To differentiate ischemic from hemorrhagic stroke",
+        "C": "To estimate perfusion",
+        "D": "To assess infarct volume"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Non-contrast CT\" states: \"Differentiates between hemorrhagic and ischemic stroke!\""
+    },
+    {
+      "id": "qctq17",
+      "text": "Why is thrombolysis contraindicated in hemorrhagic stroke?",
+      "options": {
+        "A": "It is ineffective",
+        "B": "It increases clot formation",
+        "C": "It is lethal",
+        "D": "It delays thrombectomy"
+      },
+      "correct": "C",
+      "explanation": "The slide explicitly states: \"Thrombolysis = lethal\" in hemorrhagic stroke."
+    },
+    {
+      "id": "qctq18",
+      "text": "What imaging score is used to estimate early ischemic changes?",
+      "options": {
+        "A": "NIHSS",
+        "B": "mTICI",
+        "C": "ASPECTS",
+        "D": "Dice score"
+      },
+      "correct": "C",
+      "explanation": "Multiple slides discuss ASPECTS in treatment decision-making."
+    },
+    {
+      "id": "qctq19",
+      "text": "Why is ASPECTS considered limited according to the lecture?",
+      "options": {
+        "A": "It is too slow",
+        "B": "It requires contrast",
+        "C": "It is a coarse, region-based score",
+        "D": "It cannot be automated"
+      },
+      "correct": "C",
+      "explanation": "The summary slide states the need to \"leave ordinary scaled parameters like ASPECTS behind\" in favor of voxel-based measures."
+    },
+    {
+      "id": "qctq20",
+      "text": "What is the motivation for automated, voxel-based measures in stroke?",
+      "options": {
+        "A": "Reduce CT dose",
+        "B": "Replace radiologists",
+        "C": "Provide more detailed and objective quantification",
+        "D": "Speed up scanning"
+      },
+      "correct": "C",
+      "explanation": "The final summary emphasizes moving toward \"automated, voxel-based measures for treatment evaluation and planning.\""
+    },
+    {
+      "id": "qctq21",
+      "text": "Why is infarct location important beyond infarct volume?",
+      "options": {
+        "A": "Volume is unreliable",
+        "B": "Location affects functional outcome",
+        "C": "Location determines CT dose",
+        "D": "Location affects HU values"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Infarct Location Matters!\" highlights that simple volume models are insufficient."
+    },
+    {
+      "id": "qctq22",
+      "text": "What is a key challenge when integrating AI tools into stroke workflows?",
+      "options": {
+        "A": "Lack of data",
+        "B": "Too few networks",
+        "C": "Multiple findings and multiple networks",
+        "D": "Low image quality"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Problems due to multiple findings/networks\" explicitly addresses this issue."
+    },
+    {
+      "id": "qctq23",
+      "text": "Why is dose reduction discussed together with new reconstruction algorithms?",
+      "options": {
+        "A": "Lower dose improves contrast",
+        "B": "Iterative methods enable acceptable quality at lower dose",
+        "C": "Dose reduction eliminates artifacts",
+        "D": "Dose reduction improves HU accuracy"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Dose reduction – reconsider ALARA\" links dose reduction to novel reconstruction algorithms."
+    },
+    {
+      "id": "qctq24",
+      "text": "What clinical decision depends on excluding intracranial bleeding?",
+      "options": {
+        "A": "Whether to perform thrombectomy",
+        "B": "Whether to start i.v. thrombolysis",
+        "C": "Whether to perform MRI",
+        "D": "Whether to assess ASPECTS"
+      },
+      "correct": "B",
+      "explanation": "The stroke decision flowchart shows bleeding exclusion before initiating thrombolysis."
+    },
+    {
+      "id": "qctq25",
+      "text": "What does the lecture suggest as the future direction of CT-based decision making?",
+      "options": {
+        "A": "More visual inspection",
+        "B": "More qualitative scoring",
+        "C": "Quantification using raw data and voxel-level analysis",
+        "D": "Replacing CT with MRI"
+      },
+      "correct": "C",
+      "explanation": "The summary slide recommends combining raw CT and CT-perfusion data and moving to voxel-based measures."
+    },
+    {
+      "id": "qctq26",
+      "text": "Why is CT suitable for opportunistic screening compared to DEXA?",
+      "options": {
+        "A": "Lower dose",
+        "B": "Higher availability in routine care",
+        "C": "Better spatial resolution only",
+        "D": "No calibration needed"
+      },
+      "correct": "B",
+      "explanation": "The lecture emphasizes routine CT availability and large-scale existing datasets."
+    },
+    {
+      "id": "qctq27",
+      "text": "Which statement best summarizes the role of imaging in stroke according to the lecture?",
+      "options": {
+        "A": "Imaging confirms diagnosis only",
+        "B": "Imaging guides therapy decisions",
+        "C": "Imaging is secondary to clinical exam",
+        "D": "Imaging is optional"
+      },
+      "correct": "B",
+      "explanation": "Multiple slides emphasize imaging-based treatment decisions (who, when, how to treat)."
+    },
+    {
+      "id": "qctq28",
+      "text": "Why is large-scale data essential for quantitative imaging?",
+      "options": {
+        "A": "To increase image resolution",
+        "B": "To enable robust models and validation",
+        "C": "To reduce radiation dose",
+        "D": "To avoid calibration"
+      },
+      "correct": "B",
+      "explanation": "The lecture highlights hundreds of thousands of CT exams enabling robust quantitative analysis."
+    },
+    {
+      "id": "qctq29",
+      "text": "What is a key limitation of visual-only diagnosis emphasized throughout the lecture?",
+      "options": {
+        "A": "It is too slow",
+        "B": "It is subjective and coarse",
+        "C": "It requires MRI",
+        "D": "It increases dose"
+      },
+      "correct": "B",
+      "explanation": "The repeated contrast between \"looking at images\" and quantification highlights subjectivity and lack of precision."
+    },
+    {
+      "id": "qctq30",
+      "text": "What overarching shift does the lecture advocate?",
+      "options": {
+        "A": "From CT to MRI",
+        "B": "From segmentation to classification",
+        "C": "From imaging to quantification",
+        "D": "From automation to manual assessment"
+      },
+      "correct": "C",
+      "explanation": "This is explicitly stated in the lecture title and reinforced in the final summary."
+    }
+  ]
+}

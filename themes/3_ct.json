@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": "ct1",
+      "text": "Why is CT able to reconstruct a 3D image from multiple 2D X-ray images?",
+      "options": {
+        "A": "Because X-rays penetrate matter uniformly",
+        "B": "Because attenuation values can be stacked directly",
+        "C": "Because projections are acquired around an axis of rotation",
+        "D": "Because detectors measure depth information directly"
+      },
+      "correct": "C",
+      "explanation": "Slide \"CT – Terminology\" states: \"Generating 3D image of the inside of an object from multiple 2D X-Ray images taken around a single axis of rotation.\" The rotation provides angular diversity needed for reconstruction."
+    },
+    {
+      "id": "ct2",
+      "text": "What is the physical meaning of the Beer–Lambert law in CT?",
+      "options": {
+        "A": "X-ray intensity decreases linearly with object thickness",
+        "B": "X-ray attenuation is independent of material",
+        "C": "Measured intensity corresponds to an integral of attenuation along a ray",
+        "D": "Only scattered photons are measured"
+      },
+      "correct": "C",
+      "explanation": "From slides \"X-Ray Attenuation\": attenuation in inhomogeneous media is expressed as an \"attenuation integral\" over the ray path, which is exactly the Beer–Lambert law formulation."
+    },
+    {
+      "id": "ct3",
+      "text": "Why are logarithms applied to detector intensities before CT reconstruction?",
+      "options": {
+        "A": "To reduce noise",
+        "B": "To convert exponential attenuation into a linear integral",
+        "C": "To normalize detector values",
+        "D": "To compensate for scattering"
+      },
+      "correct": "B",
+      "explanation": "From the attenuation slides: Beer–Lambert law is exponential in intensity. Taking the logarithm yields a linear path integral of the attenuation coefficient μ, which is required for reconstruction."
+    },
+    {
+      "id": "ct4",
+      "text": "What does a sinogram represent in CT?",
+      "options": {
+        "A": "A reconstructed CT slice",
+        "B": "The Fourier transform of the image",
+        "C": "The Radon transform of the object",
+        "D": "The detector geometry"
+      },
+      "correct": "C",
+      "explanation": "Slides \"The Radon Transform – Example\" show that the sinogram is obtained by applying the Radon transform, i.e. integrals of the object over straight lines for different angles."
+    },
+    {
+      "id": "ct5",
+      "text": "Why is the Radon transform fundamental to CT reconstruction?",
+      "options": {
+        "A": "Because it models scattering",
+        "B": "Because CT images are stored in Radon space",
+        "C": "Because X-ray measurements correspond to line integrals",
+        "D": "Because it directly removes noise"
+      },
+      "correct": "C",
+      "explanation": "Slide \"The Radon Transform in 2D\": \"Integral of a 2D function over straight lines.\" This exactly matches the physics of X-ray attenuation measurements."
+    },
+    {
+      "id": "ct6",
+      "text": "What key insight does the Fourier Slice Theorem provide?",
+      "options": {
+        "A": "Backprojection amplifies high frequencies",
+        "B": "A projection corresponds to a slice in Fourier space",
+        "C": "CT reconstruction is impossible without interpolation",
+        "D": "Noise is removed in Fourier space"
+      },
+      "correct": "B",
+      "explanation": "Slide \"The Fourier Slice Theorem\": \"The 1D Fourier transform of a projection is equivalent to a slice of the 2D Fourier transform of f.\""
+    },
+    {
+      "id": "ct7",
+      "text": "Why is direct Fourier inversion impractical in real CT systems?",
+      "options": {
+        "A": "Fourier transforms are too slow",
+        "B": "The Fourier space is sampled irregularly",
+        "C": "It requires iterative optimization",
+        "D": "It cannot handle noise"
+      },
+      "correct": "B",
+      "explanation": "Slides \"Direct Fourier Inversion\": \"Problem: Irregular sampling of Fourier space → interpolation required.\" This interpolation introduces errors."
+    },
+    {
+      "id": "ct8",
+      "text": "Why does simple backprojection produce a blurred image?",
+      "options": {
+        "A": "Because projections are noisy",
+        "B": "Because low frequencies are overemphasized",
+        "C": "Because high frequencies are removed",
+        "D": "Because interpolation is missing"
+      },
+      "correct": "B",
+      "explanation": "Slides \"Filtered Backprojection\": backprojection causes \"amplification of low frequencies,\" which leads to blurring unless compensated by filtering."
+    },
+    {
+      "id": "ct9",
+      "text": "What is the purpose of the ramp filter in FBP?",
+      "options": {
+        "A": "To suppress high-frequency noise",
+        "B": "To compensate for low-frequency amplification",
+        "C": "To smooth projections",
+        "D": "To remove scatter"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Filtered Backprojection\": filtering weights projections with respect to frequency \"to compensate for amplification of low frequencies by the backprojection.\""
+    },
+    {
+      "id": "ct10",
+      "text": "Why are smoothing filters (e.g. Shepp-Logan, Hamming) used instead of a pure ramp filter?",
+      "options": {
+        "A": "To increase spatial resolution",
+        "B": "To reduce detector noise",
+        "C": "To improve geometric accuracy",
+        "D": "To reduce computation time"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Choice of the right filter\": \"Add smoothing to cope with detector noise.\" Pure ramp filters amplify noise."
+    },
+    {
+      "id": "ct11",
+      "text": "What happens when the number of projections is too small?",
+      "options": {
+        "A": "Image becomes over-smoothed",
+        "B": "Streak artifacts appear",
+        "C": "Contrast is lost",
+        "D": "Resolution increases"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Effect of number of projections\": few projections lead to severe streak artifacts due to insufficient angular sampling."
+    },
+    {
+      "id": "ct12",
+      "text": "Why does spiral CT require z-interpolation when using 2D FBP?",
+      "options": {
+        "A": "Because detectors are misaligned",
+        "B": "Because FBP assumes circular trajectories",
+        "C": "Because attenuation is nonlinear",
+        "D": "Because Fourier transforms fail in 3D"
+      },
+      "correct": "B",
+      "explanation": "Slide \"Modern CT Scanners\": \"Circular trajectory required for FBP → z-Interpolation/Filtering to use 2D FBP for spiral CT reconstruction.\""
+    },
+    {
+      "id": "ct13",
+      "text": "Why is a designated 3D reconstruction algorithm required for cone-beam CT?",
+      "options": {
+        "A": "Because fan-beam geometry is insufficient",
+        "B": "Because attenuation is anisotropic",
+        "C": "Because projections are truly 3D",
+        "D": "Because detectors rotate faster"
+      },
+      "correct": "C",
+      "explanation": "Slides \"3D Cone-beam CT\": cone-beam geometry cannot be reconstructed slice-by-slice; hence \"Designated 3D reconstruction required!\""
+    },
+    {
+      "id": "ct14",
+      "text": "What is the main limitation of analytical reconstruction methods like FBP?",
+      "options": {
+        "A": "They are slow",
+        "B": "They cannot be implemented on GPUs",
+        "C": "They assume simplified physics and geometry",
+        "D": "They require large system matrices"
+      },
+      "correct": "C",
+      "explanation": "Slide \"Comparison of Reconstruction Techniques\": analytical methods have \"Restriction to linear transmission\" and \"other physical effects difficult to incorporate.\""
+    },
+    {
+      "id": "ct15",
+      "text": "Why are iterative reconstruction methods advantageous for low-dose CT?",
+      "options": {
+        "A": "They remove the need for filtering",
+        "B": "They directly invert the system matrix",
+        "C": "They incorporate noise models and prior knowledge",
+        "D": "They avoid backprojection"
+      },
+      "correct": "C",
+      "explanation": "Slides \"Iterative Reconstruction & Extensions\": prior knowledge can be incorporated \"to yield improved results for few projections, low dose, truncated data.\""
+    }
+  ]
+}

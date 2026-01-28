@@ -1,0 +1,376 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "text": "X-rays are best described as:",
+      "options": {
+        "A": "Low-energy mechanical waves",
+        "B": "High-energy electromagnetic waves",
+        "C": "Charged particle beams",
+        "D": "Acoustic waves"
+      },
+      "correct": "B",
+      "explanation": "X-rays are electromagnetic waves with very short wavelengths and high photon energy. They are not mechanical waves, sound waves, or particle beams."
+    },
+    {
+      "id": "q2",
+      "text": "Which property allows X-rays to penetrate matter opaque to visible light?",
+      "options": {
+        "A": "Their coherence",
+        "B": "Their phase",
+        "C": "Their high photon energy",
+        "D": "Their polarization"
+      },
+      "correct": "C",
+      "explanation": "Penetration depth depends on photon energy. X-rays have much higher photon energy than visible light, allowing them to pass through dense materials."
+    },
+    {
+      "id": "q3",
+      "text": "The energy of an electromagnetic wave is given by:",
+      "options": {
+        "A": "E = hλc",
+        "B": "E = hc/λ",
+        "C": "E = λc",
+        "D": "E = h/(λc)"
+      },
+      "correct": "B",
+      "explanation": "Photon energy is inversely proportional to wavelength. Shorter wavelengths (like X-rays) correspond to higher energies."
+    },
+    {
+      "id": "q4",
+      "text": "Compared to visible light, X-rays have:",
+      "options": {
+        "A": "Longer wavelength and lower frequency",
+        "B": "Shorter wavelength and higher frequency",
+        "C": "Lower energy photons",
+        "D": "The same wavelength"
+      },
+      "correct": "B",
+      "explanation": "X-rays lie at much shorter wavelengths than visible light, which implies higher frequency and higher photon energy."
+    },
+    {
+      "id": "q5",
+      "text": "X-rays were discovered by Wilhelm Röntgen in:",
+      "options": {
+        "A": "1875",
+        "B": "1895",
+        "C": "1905",
+        "D": "1927"
+      },
+      "correct": "B",
+      "explanation": "Wilhelm Röntgen discovered X-rays in 1895, a discovery that earned him the first Nobel Prize in Physics."
+    },
+    {
+      "id": "q6",
+      "text": "The first clinical CT scanner was introduced in:",
+      "options": {
+        "A": "1950",
+        "B": "1963",
+        "C": "1973",
+        "D": "1985"
+      },
+      "correct": "C",
+      "explanation": "The first clinical CT scanner was introduced in 1973 by Hounsfield and Cormack."
+    },
+    {
+      "id": "q7",
+      "text": "Which modality accounts for the highest number of examinations in German clinics?",
+      "options": {
+        "A": "MRI",
+        "B": "Ultrasound",
+        "C": "Nuclear imaging",
+        "D": "X-ray–based imaging"
+      },
+      "correct": "D",
+      "explanation": "Despite newer modalities, X-ray–based imaging remains the most frequently used due to speed, cost efficiency, and availability."
+    },
+    {
+      "id": "q8",
+      "text": "One reason X-rays remain clinically dominant is that they are:",
+      "options": {
+        "A": "Non-ionizing",
+        "B": "Extremely fast and widely available",
+        "C": "Always three-dimensional",
+        "D": "Free of radiation risks"
+      },
+      "correct": "B",
+      "explanation": "X-ray systems are fast, inexpensive, and widely available, making them ideal for routine clinical use."
+    },
+    {
+      "id": "q9",
+      "text": "The primary biological risk of X-rays comes from:",
+      "options": {
+        "A": "Heating of tissue",
+        "B": "Elastic scattering",
+        "C": "Ionization of atoms",
+        "D": "Mechanical damage"
+      },
+      "correct": "C",
+      "explanation": "X-rays ionize atoms, which can damage DNA and potentially lead to cancer."
+    },
+    {
+      "id": "q10",
+      "text": "Ionization can lead to cancer mainly because it:",
+      "options": {
+        "A": "Changes blood flow",
+        "B": "Alters DNA structure",
+        "C": "Destroys cell membranes",
+        "D": "Increases tissue temperature"
+      },
+      "correct": "B",
+      "explanation": "Ionization can cause mutations by breaking or modifying DNA strands."
+    },
+    {
+      "id": "q11",
+      "text": "Which experiment demonstrated mutation caused by radiation?",
+      "options": {
+        "A": "Discovery of the DNA double helix",
+        "B": "Fruit fly mutation experiments",
+        "C": "First CT scan",
+        "D": "Fluoroscopy imaging"
+      },
+      "correct": "B",
+      "explanation": "Hermann Muller demonstrated radiation-induced mutations using fruit flies in 1927."
+    },
+    {
+      "id": "q12",
+      "text": "Which of the following is NOT an X-ray–based modality?",
+      "options": {
+        "A": "Fluoroscopy",
+        "B": "Angiography",
+        "C": "MRI",
+        "D": "Mammography"
+      },
+      "correct": "C",
+      "explanation": "MRI uses magnetic fields and radio waves, not X-rays."
+    },
+    {
+      "id": "q13",
+      "text": "Fluoroscopy differs from conventional X-ray imaging because it:",
+      "options": {
+        "A": "Uses lower energy photons",
+        "B": "Produces real-time images",
+        "C": "Is non-ionizing",
+        "D": "Does not use detectors"
+      },
+      "correct": "B",
+      "explanation": "Fluoroscopy provides continuous real-time imaging, unlike static X-ray images."
+    },
+    {
+      "id": "q14",
+      "text": "Angiography is primarily used to visualize:",
+      "options": {
+        "A": "Bones",
+        "B": "Soft tissue",
+        "C": "Blood vessels",
+        "D": "Cartilage"
+      },
+      "correct": "C",
+      "explanation": "Angiography visualizes blood vessels, usually using contrast agents."
+    },
+    {
+      "id": "q15",
+      "text": "Computed Tomography differs from standard X-ray imaging because it:",
+      "options": {
+        "A": "Uses ultrasound waves",
+        "B": "Produces cross-sectional images",
+        "C": "Is non-ionizing",
+        "D": "Does not require reconstruction"
+      },
+      "correct": "B",
+      "explanation": "CT reconstructs cross-sectional slices from multiple X-ray projections."
+    },
+    {
+      "id": "q16",
+      "text": "X-ray generation in tubes is mainly based on:",
+      "options": {
+        "A": "Reflection and refraction",
+        "B": "Bremsstrahlung and characteristic radiation",
+        "C": "Compton and Rayleigh scattering",
+        "D": "Nuclear decay"
+      },
+      "correct": "B",
+      "explanation": "Electrons decelerating near nuclei produce Bremsstrahlung, while shell transitions produce characteristic radiation."
+    },
+    {
+      "id": "q17",
+      "text": "Bremsstrahlung radiation occurs when:",
+      "options": {
+        "A": "An electron changes energy levels",
+        "B": "A photon hits a detector",
+        "C": "An electron is decelerated near a nucleus",
+        "D": "A nucleus undergoes decay"
+      },
+      "correct": "C",
+      "explanation": "Bremsstrahlung arises from deceleration of electrons in the electric field of atomic nuclei."
+    },
+    {
+      "id": "q18",
+      "text": "Characteristic radiation depends mainly on:",
+      "options": {
+        "A": "The detector type",
+        "B": "The tube voltage only",
+        "C": "The anode material",
+        "D": "The exposure time"
+      },
+      "correct": "C",
+      "explanation": "Characteristic X-ray energies are specific to the atomic structure of the anode material."
+    },
+    {
+      "id": "q19",
+      "text": "Why do modern X-ray tubes use rotating anodes?",
+      "options": {
+        "A": "To increase wavelength",
+        "B": "To reduce electron speed",
+        "C": "To reduce anode degradation",
+        "D": "To eliminate ionization"
+      },
+      "correct": "C",
+      "explanation": "Rotating anodes distribute heat over a larger surface, reducing wear."
+    },
+    {
+      "id": "q20",
+      "text": "Which interaction is ionizing and dominant at low X-ray energies?",
+      "options": {
+        "A": "Thomson scattering",
+        "B": "Compton scattering",
+        "C": "Photoelectric absorption",
+        "D": "Elastic scattering"
+      },
+      "correct": "C",
+      "explanation": "Photoelectric absorption transfers all photon energy to electrons, causing ionization."
+    },
+    {
+      "id": "q21",
+      "text": "Photoelectric absorption strength mainly increases with:",
+      "options": {
+        "A": "Lower electron density",
+        "B": "Higher material density",
+        "C": "Larger detector pixels",
+        "D": "Higher scattering angle"
+      },
+      "correct": "B",
+      "explanation": "Denser materials (like bone) absorb more X-rays via the photoelectric effect."
+    },
+    {
+      "id": "q22",
+      "text": "Why do bones appear brighter than soft tissue in X-ray images?",
+      "options": {
+        "A": "Bones emit X-rays",
+        "B": "Bones scatter X-rays more",
+        "C": "Bones absorb more X-rays",
+        "D": "Bones reflect X-rays"
+      },
+      "correct": "C",
+      "explanation": "Bones absorb more X-rays, so fewer photons reach the detector, making them appear bright."
+    },
+    {
+      "id": "q23",
+      "text": "Traditional X-ray films work because X-rays:",
+      "options": {
+        "A": "Heat the film",
+        "B": "Change magnetic properties",
+        "C": "Expose photographic material",
+        "D": "Cause fluorescence only"
+      },
+      "correct": "C",
+      "explanation": "X-rays expose photographic film in a similar way to visible light."
+    },
+    {
+      "id": "q24",
+      "text": "Image intensifiers improve image quality mainly by:",
+      "options": {
+        "A": "Increasing X-ray dose",
+        "B": "Amplifying visible light",
+        "C": "Eliminating scatter",
+        "D": "Cooling the detector"
+      },
+      "correct": "B",
+      "explanation": "Image intensifiers convert X-rays to light and amplify the signal for better visibility."
+    },
+    {
+      "id": "q25",
+      "text": "In indirect flat-panel detectors:",
+      "options": {
+        "A": "X-rays are directly converted into charge",
+        "B": "X-rays are converted into visible light first",
+        "C": "Only phase information is measured",
+        "D": "No scintillator is used"
+      },
+      "correct": "B",
+      "explanation": "Indirect detectors use a scintillator to convert X-rays into visible light before detection."
+    },
+    {
+      "id": "q26",
+      "text": "Energy-integrating detectors measure:",
+      "options": {
+        "A": "Individual photon energies",
+        "B": "Photon arrival times",
+        "C": "Integrated deposited energy",
+        "D": "Phase shifts"
+      },
+      "correct": "C",
+      "explanation": "EIDs sum the total energy deposited by all photons during an exposure."
+    },
+    {
+      "id": "q27",
+      "text": "A key advantage of photon-counting detectors is:",
+      "options": {
+        "A": "Higher heat tolerance",
+        "B": "Spectral (energy-resolved) information",
+        "C": "Lower spatial resolution",
+        "D": "Higher electronic noise"
+      },
+      "correct": "B",
+      "explanation": "Photon-counting detectors measure individual photon energies, enabling spectral imaging."
+    },
+    {
+      "id": "q28",
+      "text": "Photon-counting CT can best be compared to:",
+      "options": {
+        "A": "Black-and-white photography",
+        "B": "Infrared imaging",
+        "C": "Color photography",
+        "D": "Ultrasound imaging"
+      },
+      "correct": "C",
+      "explanation": "Like color photography, photon-counting CT distinguishes information based on energy."
+    },
+    {
+      "id": "q29",
+      "text": "Phase-contrast X-ray imaging exploits differences in:",
+      "options": {
+        "A": "Intensity only",
+        "B": "Wavelength only",
+        "C": "Phase shifts of X-rays",
+        "D": "Detector geometry"
+      },
+      "correct": "C",
+      "explanation": "Phase-contrast imaging measures changes in the phase of X-rays caused by different materials."
+    },
+    {
+      "id": "q30",
+      "text": "Classic phase-contrast methods traditionally required:",
+      "options": {
+        "A": "High patient dose",
+        "B": "MRI scanners",
+        "C": "Synchrotron radiation",
+        "D": "Ultrasound transducers"
+      },
+      "correct": "C",
+      "explanation": "Early phase-contrast imaging required highly coherent, monochromatic synchrotron X-rays."
+    },
+    {
+      "id": "q31",
+      "text": "Dark-field X-ray imaging is mainly sensitive to:",
+      "options": {
+        "A": "Absorption",
+        "B": "Large-scale structures",
+        "C": "Small-angle scattering",
+        "D": "Magnetic fields"
+      },
+      "correct": "C",
+      "explanation": "Dark-field imaging detects ultra-small-angle scattering caused by microstructures."
+    }
+  ]
+}

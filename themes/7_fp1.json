@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "fi1",
+      "text": "What is the key difference between morphological and functional imaging?",
+      "options": {
+        "A": "Morphological imaging uses radiation, functional does not",
+        "B": "Functional imaging visualizes anatomy only",
+        "C": "Morphological imaging shows structure, functional imaging shows physiological processes",
+        "D": "Functional imaging has higher spatial resolution"
+      },
+      "correct": "C",
+      "explanation": "The lecture explicitly contrasts morphological imaging (structure) with functional imaging (physiology and processes)."
+    },
+    {
+      "id": "fi2",
+      "text": "Which modality is closest to the morphological end of the functional–morphological continuum?",
+      "options": {
+        "A": "Tracer-based nuclear medicine",
+        "B": "Functional MRI",
+        "C": "Radiography",
+        "D": "Contrast-enhanced ultrasound"
+      },
+      "correct": "C",
+      "explanation": "The continuum slide places radiography at the morphological end, far from tracer-based functional techniques."
+    },
+    {
+      "id": "fi3",
+      "text": "What principle enables functional imaging in nuclear medicine?",
+      "options": {
+        "A": "X-ray attenuation",
+        "B": "Spin relaxation",
+        "C": "Tracer principle",
+        "D": "Acoustic reflection"
+      },
+      "correct": "C",
+      "explanation": "One learning outcome is to \"elaborate on the rationale of the tracer principle using selected examples.\""
+    },
+    {
+      "id": "fi4",
+      "text": "What is the tracer principle?",
+      "options": {
+        "A": "Injecting contrast to enhance edges",
+        "B": "Using labeled molecules to visualize biological processes",
+        "C": "Measuring density differences",
+        "D": "Enhancing signal-to-noise ratio"
+      },
+      "correct": "B",
+      "explanation": "Slides on nuclear medicine describe tracers as labeled substances participating in metabolic processes."
+    },
+    {
+      "id": "fi5",
+      "text": "Which imaging modality is inherently functional without contrast agents?",
+      "options": {
+        "A": "CT angiography",
+        "B": "Contrast-enhanced MRI",
+        "C": "Doppler ultrasound",
+        "D": "Radiography"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Inherent functional imaging\" lists Doppler US as inherently functional."
+    },
+    {
+      "id": "fi6",
+      "text": "What physical effect is exploited by Doppler ultrasound?",
+      "options": {
+        "A": "Photoelectric effect",
+        "B": "Compton scattering",
+        "C": "Frequency shift due to motion",
+        "D": "Spin precession"
+      },
+      "correct": "C",
+      "explanation": "The Doppler slide shows frequency shifts caused by moving blood cells."
+    },
+    {
+      "id": "fi7",
+      "text": "What information does Doppler ultrasound primarily provide?",
+      "options": {
+        "A": "Blood oxygenation",
+        "B": "Blood flow velocity and direction",
+        "C": "Vessel wall thickness",
+        "D": "Tissue perfusion maps"
+      },
+      "correct": "B",
+      "explanation": "Doppler US measures blood flow velocity using frequency shifts."
+    },
+    {
+      "id": "fi8",
+      "text": "Why are iodine-based contrast agents used in X-ray angiography?",
+      "options": {
+        "A": "They emit radiation",
+        "B": "They reduce noise",
+        "C": "They increase X-ray attenuation",
+        "D": "They shorten T1 relaxation"
+      },
+      "correct": "C",
+      "explanation": "Slides state iodine-based agents \"increase the X-ray attenuation and thus the contrast.\""
+    },
+    {
+      "id": "fi9",
+      "text": "Why can iodine contrast agents leave the blood vessels?",
+      "options": {
+        "A": "They are radioactive",
+        "B": "They are lipid-soluble",
+        "C": "They have small molecular size",
+        "D": "They bind to hemoglobin"
+      },
+      "correct": "C",
+      "explanation": "The angiography slide notes their \"small size enables them to eventually leave the blood vessels.\""
+    },
+    {
+      "id": "fi10",
+      "text": "Why do different organs show different contrast uptake curves in CT?",
+      "options": {
+        "A": "Different HU scaling",
+        "B": "Different detector sensitivities",
+        "C": "Parallel circuits in the circulatory system",
+        "D": "Motion artifacts"
+      },
+      "correct": "C",
+      "explanation": "Slides explain that parallel connections in the circulatory system cause different uptake curves per organ."
+    },
+    {
+      "id": "fi11",
+      "text": "What distinguishes arterial from venous phase CT?",
+      "options": {
+        "A": "Slice thickness",
+        "B": "Timing of image acquisition",
+        "C": "Tube voltage",
+        "D": "Reconstruction kernel"
+      },
+      "correct": "B",
+      "explanation": "The contrast-enhanced CT slides emphasize timing relative to contrast injection."
+    },
+    {
+      "id": "fi12",
+      "text": "Why is contrast timing critical in emergency bleeding CT?",
+      "options": {
+        "A": "To reduce radiation dose",
+        "B": "To avoid motion artifacts",
+        "C": "To capture active contrast extravasation",
+        "D": "To enhance bone contrast"
+      },
+      "correct": "C",
+      "explanation": "Emergency CT examples show arterial and venous phases to identify active bleeding."
+    },
+    {
+      "id": "fi13",
+      "text": "What does DCE-MRI primarily measure?",
+      "options": {
+        "A": "Blood velocity",
+        "B": "Tissue permeability and vascularization",
+        "C": "Bone density",
+        "D": "Spin density"
+      },
+      "correct": "B",
+      "explanation": "Slides describe DCE-MRI as imaging vascularization and permeability."
+    },
+    {
+      "id": "fi14",
+      "text": "Why does contrast enhancement in the brain indicate pathology?",
+      "options": {
+        "A": "Brain tissue has no blood supply",
+        "B": "MR contrast agents shorten T2",
+        "C": "Contrast agents cannot cross the blood–brain barrier",
+        "D": "CT contrast accumulates in neurons"
+      },
+      "correct": "C",
+      "explanation": "Slides state that MR contrast agents cannot pass the blood–brain barrier; enhancement indicates disturbed permeability."
+    },
+    {
+      "id": "fi15",
+      "text": "Which contrast mechanism is exploited by fMRI?",
+      "options": {
+        "A": "Iodine attenuation",
+        "B": "T1 shortening",
+        "C": "BOLD effect",
+        "D": "Tracer decay"
+      },
+      "correct": "C",
+      "explanation": "The fMRI slide explains Blood Oxygen Level Dependent (BOLD) contrast."
+    },
+    {
+      "id": "fi16",
+      "text": "What physiological change underlies the BOLD signal?",
+      "options": {
+        "A": "Increased glucose uptake",
+        "B": "Change in deoxyhemoglobin concentration",
+        "C": "Cell swelling",
+        "D": "Neuronal firing directly"
+      },
+      "correct": "B",
+      "explanation": "Slides explain that deoxyhemoglobin alters relaxation properties and underlies BOLD contrast."
+    },
+    {
+      "id": "fi17",
+      "text": "Why is fMRI considered an indirect measure of neural activity?",
+      "options": {
+        "A": "Low spatial resolution",
+        "B": "Delayed hemodynamic response",
+        "C": "Signal noise",
+        "D": "Low field strength"
+      },
+      "correct": "B",
+      "explanation": "The lecture notes that BOLD changes are measurable seconds after neural activity."
+    },
+    {
+      "id": "fi18",
+      "text": "What distinguishes contrast-enhanced ultrasound from CT or MRI contrast?",
+      "options": {
+        "A": "Microbubbles remain intravascular",
+        "B": "Higher radiation dose",
+        "C": "Shorter half-life",
+        "D": "Penetration into tissue"
+      },
+      "correct": "A",
+      "explanation": "Slides state that US contrast agents are microbubbles that \"do not leave vasculature.\""
+    },
+    {
+      "id": "fi19",
+      "text": "How do microbubbles generate contrast in ultrasound?",
+      "options": {
+        "A": "By absorbing sound",
+        "B": "By emitting radiation",
+        "C": "By nonlinear oscillation producing harmonics",
+        "D": "By scattering X-rays"
+      },
+      "correct": "C",
+      "explanation": "Slides explain inelastic expansion/compression producing higher harmonics."
+    },
+    {
+      "id": "fi20",
+      "text": "Why can microbubbles be intentionally destroyed during imaging?",
+      "options": {
+        "A": "To reduce noise",
+        "B": "To generate short-term strong contrast",
+        "C": "To lower dose",
+        "D": "To improve spatial resolution"
+      },
+      "correct": "B",
+      "explanation": "The lecture states bubble destruction generates stronger short-term contrast."
+    },
+    {
+      "id": "fi21",
+      "text": "What is the main advantage of tracer-based nuclear medicine?",
+      "options": {
+        "A": "High spatial resolution",
+        "B": "Visualization of metabolic processes",
+        "C": "Low cost",
+        "D": "No radiation"
+      },
+      "correct": "B",
+      "explanation": "Slides emphasize making metabolic processes visible using tracers."
+    },
+    {
+      "id": "fi22",
+      "text": "What is a radioactive isotope?",
+      "options": {
+        "A": "A stable nucleus",
+        "B": "A nucleus with excess energy that decays",
+        "C": "A contrast agent",
+        "D": "A charged particle"
+      },
+      "correct": "B",
+      "explanation": "Slides on radioactivity explain unstable isotopes undergoing decay."
+    },
+    {
+      "id": "fi23",
+      "text": "Which decay type is used in PET imaging?",
+      "options": {
+        "A": "Alpha decay",
+        "B": "Beta minus decay",
+        "C": "Beta plus decay",
+        "D": "Gamma decay only"
+      },
+      "correct": "C",
+      "explanation": "PET uses positron (beta plus) emission, as stated in the nuclear medicine slides."
+    },
+    {
+      "id": "fi24",
+      "text": "What physical event produces detectable photons in PET?",
+      "options": {
+        "A": "Photoelectric effect",
+        "B": "Compton scattering",
+        "C": "Positron–electron annihilation",
+        "D": "Bremsstrahlung"
+      },
+      "correct": "C",
+      "explanation": "Slides list annihilation as the key interaction for PET."
+    },
+    {
+      "id": "fi25",
+      "text": "Which isotope is most commonly used in SPECT?",
+      "options": {
+        "A": "F-18",
+        "B": "Ga-68",
+        "C": "Tc-99m",
+        "D": "Y-90"
+      },
+      "correct": "C",
+      "explanation": "The isotope table lists Tc-99m as the most frequent SPECT isotope."
+    },
+    {
+      "id": "fi26",
+      "text": "Which modality detects single photons directly?",
+      "options": {
+        "A": "PET",
+        "B": "SPECT",
+        "C": "CT",
+        "D": "MRI"
+      },
+      "correct": "B",
+      "explanation": "SPECT stands for Single Photon Emission Computed Tomography."
+    },
+    {
+      "id": "fi27",
+      "text": "Why is spatial resolution typically lower in nuclear medicine?",
+      "options": {
+        "A": "Low detector sensitivity",
+        "B": "Collimation and photon statistics",
+        "C": "Motion artifacts",
+        "D": "Reconstruction errors"
+      },
+      "correct": "B",
+      "explanation": "Slides discuss resolution limitations due to physics of emission and detection."
+    },
+    {
+      "id": "fi28",
+      "text": "Which interaction dominates gamma photon attenuation in tissue?",
+      "options": {
+        "A": "Annihilation",
+        "B": "Photoelectric effect",
+        "C": "Compton scattering",
+        "D": "Bremsstrahlung"
+      },
+      "correct": "C",
+      "explanation": "Slides on radiation–matter interaction list Compton scattering as dominant."
+    },
+    {
+      "id": "fi29",
+      "text": "Why is functional imaging often combined with morphological imaging?",
+      "options": {
+        "A": "To reduce dose",
+        "B": "To improve reconstruction",
+        "C": "To localize functional information anatomically",
+        "D": "To increase contrast"
+      },
+      "correct": "C",
+      "explanation": "The continuum and examples motivate combining function with anatomy."
+    },
+    {
+      "id": "fi30",
+      "text": "Which hybrid modality exemplifies this combination?",
+      "options": {
+        "A": "US only",
+        "B": "MRI only",
+        "C": "PET/CT",
+        "D": "Radiography"
+      },
+      "correct": "C",
+      "explanation": "PET/CT combines metabolic PET data with CT anatomy."
+    },
+    {
+      "id": "fi31",
+      "text": "What limits temporal resolution in functional imaging?",
+      "options": {
+        "A": "Detector size",
+        "B": "Tracer kinetics or physiological response",
+        "C": "Reconstruction algorithm",
+        "D": "Field strength"
+      },
+      "correct": "B",
+      "explanation": "Examples like fMRI show delayed physiological responses."
+    },
+    {
+      "id": "fi32",
+      "text": "Which statement best characterizes functional imaging?",
+      "options": {
+        "A": "Always requires contrast agents",
+        "B": "Always radioactive",
+        "C": "Focuses on processes rather than structure",
+        "D": "Replaces morphological imaging"
+      },
+      "correct": "C",
+      "explanation": "The lecture consistently frames functional imaging as process-oriented."
+    },
+    {
+      "id": "fi33",
+      "text": "Why is quantitative analysis important in functional imaging?",
+      "options": {
+        "A": "To reduce scan time",
+        "B": "To standardize interpretation",
+        "C": "To improve spatial resolution",
+        "D": "To eliminate artifacts"
+      },
+      "correct": "B",
+      "explanation": "Functional measures require quantification to interpret physiological meaning."
+    },
+    {
+      "id": "fi34",
+      "text": "Which modality provides the most direct access to metabolic activity?",
+      "options": {
+        "A": "CT",
+        "B": "MRI",
+        "C": "PET",
+        "D": "Ultrasound"
+      },
+      "correct": "C",
+      "explanation": "PET directly images metabolic tracer uptake."
+    },
+    {
+      "id": "fi35",
+      "text": "What is the overarching goal of functional imaging?",
+      "options": {
+        "A": "High-resolution anatomy",
+        "B": "Visualization of physiological and biochemical processes",
+        "C": "Dose reduction",
+        "D": "Fast acquisition"
+      },
+      "correct": "B",
+      "explanation": "This goal is explicitly stated in the learning outcomes and illustrated throughout the lecture."
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "fi2_1",
+      "text": "What is the central goal of Functional Imaging II?",
+      "options": {
+        "A": "Improve spatial resolution of CT",
+        "B": "Visualize metabolic and biochemical processes",
+        "C": "Replace morphological imaging",
+        "D": "Reduce radiation dose"
+      },
+      "correct": "B",
+      "explanation": "The lecture repeatedly asks \"How to make metabolic processes visible?\" emphasizing functional and biochemical imaging."
+    },
+    {
+      "id": "fi2_2",
+      "text": "Which principle allows metabolic processes to be visualized in nuclear medicine?",
+      "options": {
+        "A": "Photoelectric effect",
+        "B": "Tracer principle",
+        "C": "Spin relaxation",
+        "D": "Doppler effect"
+      },
+      "correct": "B",
+      "explanation": "Slides reference George de Hevesy and the tracer principle as the basis for visualizing metabolism."
+    },
+    {
+      "id": "fi2_3",
+      "text": "What is the role of the carrier molecule in a radiopharmaceutical?",
+      "options": {
+        "A": "Emits gamma photons",
+        "B": "Determines biological targeting",
+        "C": "Improves spatial resolution",
+        "D": "Acts as a detector"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Radiopharmaceutical\" shows that the carrier molecule determines which tissue the tracer accumulates in."
+    },
+    {
+      "id": "fi2_4",
+      "text": "Why do different radiopharmaceuticals accumulate in different organs?",
+      "options": {
+        "A": "Different detector sensitivities",
+        "B": "Different reconstruction algorithms",
+        "C": "Different functional properties of tissues",
+        "D": "Different photon energies"
+      },
+      "correct": "C",
+      "explanation": "The slide explicitly states: \"Different radiopharmaceuticals accumulate in different parts of the body, depending on functional aspects of tissue.\""
+    },
+    {
+      "id": "fi2_5",
+      "text": "What causes both physiological and pathological uptake in PET images?",
+      "options": {
+        "A": "Noise and scatter",
+        "B": "Detector non-linearity",
+        "C": "Normal and abnormal tracer accumulation",
+        "D": "Reconstruction artifacts"
+      },
+      "correct": "C",
+      "explanation": "The slide \"What can we see in a nuclear image?\" highlights both physiological and pathological uptake."
+    },
+    {
+      "id": "fi2_6",
+      "text": "Why is imaging time point critical in nuclear medicine?",
+      "options": {
+        "A": "Because radiation dose changes",
+        "B": "Because tracer kinetics vary over time",
+        "C": "Because detector efficiency decays",
+        "D": "Because resolution improves"
+      },
+      "correct": "B",
+      "explanation": "Slides show that each radiopharmaceutical has its own kinetics, leading to different images at different times."
+    },
+    {
+      "id": "fi2_7",
+      "text": "What additional information can be derived by imaging at multiple time points?",
+      "options": {
+        "A": "Higher spatial resolution",
+        "B": "Reduced noise",
+        "C": "Overall pharmacokinetics",
+        "D": "Better collimation"
+      },
+      "correct": "C",
+      "explanation": "The slide states: \"By acquiring at different time points, the overall pharmacokinetics can be visualized.\""
+    },
+    {
+      "id": "fi2_8",
+      "text": "Which modalities belong to nuclear medicine?",
+      "options": {
+        "A": "CT, MRI",
+        "B": "Ultrasound, Doppler",
+        "C": "Scintigraphy, SPECT, PET",
+        "D": "CT perfusion, MRI perfusion"
+      },
+      "correct": "C",
+      "explanation": "The slide \"Which are the most common nuclear medicine modalities?\" lists Scintigraphy, SPECT, and PET."
+    },
+    {
+      "id": "fi2_9",
+      "text": "What dimensionality does scintigraphy provide?",
+      "options": {
+        "A": "3D",
+        "B": "4D",
+        "C": "2D",
+        "D": "Slice-based"
+      },
+      "correct": "C",
+      "explanation": "Scintigraphy is explicitly labeled as 2D on the modality slide."
+    },
+    {
+      "id": "fi2_10",
+      "text": "How is radiation most commonly detected in nuclear medicine?",
+      "options": {
+        "A": "Direct photon absorption only",
+        "B": "Indirect detection using scintillators and PMTs",
+        "C": "RF detection",
+        "D": "Semiconductor MRI coils"
+      },
+      "correct": "B",
+      "explanation": "The detection slide shows indirect detection using scintillators coupled to photomultiplier tubes."
+    },
+    {
+      "id": "fi2_11",
+      "text": "What is the function of a scintillator in nuclear imaging?",
+      "options": {
+        "A": "Absorb RF energy",
+        "B": "Convert gamma photons into visible light",
+        "C": "Collimate photons",
+        "D": "Amplify electrical signals"
+      },
+      "correct": "B",
+      "explanation": "Slides show gamma photons converted to light before amplification in PMTs."
+    },
+    {
+      "id": "fi2_12",
+      "text": "What advantage do semiconductor detectors offer?",
+      "options": {
+        "A": "Lower spatial resolution",
+        "B": "Direct conversion of radiation to electrical signal",
+        "C": "Need for collimation removal",
+        "D": "Higher noise"
+      },
+      "correct": "B",
+      "explanation": "The slide \"Direct detection\" shows semiconductors directly converting radiation to charge."
+    },
+    {
+      "id": "fi2_13",
+      "text": "What replaces optical lenses in scintigraphy and SPECT?",
+      "options": {
+        "A": "Gradients",
+        "B": "RF coils",
+        "C": "Collimators",
+        "D": "Fourier filters"
+      },
+      "correct": "C",
+      "explanation": "The slide \"What do we use as lenses?\" explicitly answers: collimation."
+    },
+    {
+      "id": "fi2_14",
+      "text": "What is the primary function of a parallel-hole collimator?",
+      "options": {
+        "A": "Magnify the image",
+        "B": "Select photons traveling in specific directions",
+        "C": "Increase photon energy",
+        "D": "Remove scatter completely"
+      },
+      "correct": "B",
+      "explanation": "The diagram shows only photons traveling approximately parallel reaching the detector."
+    },
+    {
+      "id": "fi2_15",
+      "text": "How does a pinhole collimator differ from a parallel-hole collimator?",
+      "options": {
+        "A": "Higher sensitivity",
+        "B": "Geometric magnification",
+        "C": "Lower resolution",
+        "D": "No collimation"
+      },
+      "correct": "B",
+      "explanation": "The pinhole diagram shows image magnification depending on source distance."
+    },
+    {
+      "id": "fi2_16",
+      "text": "What trade-off is fundamental in collimation?",
+      "options": {
+        "A": "Dose vs contrast",
+        "B": "Sensitivity vs spatial resolution",
+        "C": "Noise vs reconstruction",
+        "D": "Energy vs timing"
+      },
+      "correct": "B",
+      "explanation": "Collimation improves resolution at the cost of sensitivity, as implied across collimator slides."
+    },
+    {
+      "id": "fi2_17",
+      "text": "Why is energy windowing used in nuclear imaging?",
+      "options": {
+        "A": "To increase count rate",
+        "B": "To remove scattered photons",
+        "C": "To improve detector lifetime",
+        "D": "To reduce acquisition time"
+      },
+      "correct": "B",
+      "explanation": "The take-home message links energy resolution with scattering suppression."
+    },
+    {
+      "id": "fi2_18",
+      "text": "What does SPECT add compared to scintigraphy?",
+      "options": {
+        "A": "Higher tracer specificity",
+        "B": "3D tomographic information",
+        "C": "Lower dose",
+        "D": "Faster acquisition"
+      },
+      "correct": "B",
+      "explanation": "SPECT is defined as single-photon emission computed tomography (3D)."
+    },
+    {
+      "id": "fi2_19",
+      "text": "Why must more than 180° be covered in SPECT acquisition?",
+      "options": {
+        "A": "To reduce noise",
+        "B": "To satisfy tomographic completeness",
+        "C": "To reduce scatter",
+        "D": "To increase sensitivity"
+      },
+      "correct": "B",
+      "explanation": "The slide lists \">180° covered\" as a requirement for tomographic reconstruction."
+    },
+    {
+      "id": "fi2_20",
+      "text": "What does the system matrix H describe in SPECT modeling?",
+      "options": {
+        "A": "Noise distribution",
+        "B": "Influence of voxel activity on detector measurements",
+        "C": "Image contrast",
+        "D": "Tracer decay rate"
+      },
+      "correct": "B",
+      "explanation": "Slides define H as the influence of voxel j on detector i at position k."
+    },
+    {
+      "id": "fi2_21",
+      "text": "What is the main assumption enabling linear reconstruction models?",
+      "options": {
+        "A": "Constant activity",
+        "B": "Linear superposition of voxel contributions",
+        "C": "No scatter",
+        "D": "Perfect collimation"
+      },
+      "correct": "B",
+      "explanation": "Slides explicitly list \"Linearization\" as a reconstruction assumption."
+    },
+    {
+      "id": "fi2_22",
+      "text": "What does MLEM stand for?",
+      "options": {
+        "A": "Maximum Linear Error Method",
+        "B": "Maximum Likelihood Expectation Maximization",
+        "C": "Multi-Level Energy Mapping",
+        "D": "Minimum Loss Estimation Model"
+      },
+      "correct": "B",
+      "explanation": "The slide explicitly defines MLEM as Maximum Likelihood Expectation Maximization."
+    },
+    {
+      "id": "fi2_23",
+      "text": "Which steps define iterative reconstruction in MLEM?",
+      "options": {
+        "A": "Filtering and backprojection",
+        "B": "Forward projection, comparison, backprojection",
+        "C": "Thresholding and smoothing",
+        "D": "FFT and inverse FFT"
+      },
+      "correct": "B",
+      "explanation": "The MLEM slide lists exactly these three steps."
+    },
+    {
+      "id": "fi2_24",
+      "text": "Why are iterative methods preferred in nuclear imaging?",
+      "options": {
+        "A": "They are faster",
+        "B": "They model system physics and noise",
+        "C": "They remove collimation",
+        "D": "They eliminate scatter completely"
+      },
+      "correct": "B",
+      "explanation": "Iterative reconstruction allows modeling of physics, noise, and system response."
+    },
+    {
+      "id": "fi2_25",
+      "text": "What key difference exists between PET and SPECT detection?",
+      "options": {
+        "A": "PET uses collimators",
+        "B": "SPECT detects coincidences",
+        "C": "PET detects coincident photon pairs",
+        "D": "PET is 2D only"
+      },
+      "correct": "C",
+      "explanation": "PET modeling slides describe detection of coincident photon pairs."
+    },
+    {
+      "id": "fi2_26",
+      "text": "Why does PET not require physical collimators?",
+      "options": {
+        "A": "Higher photon energy",
+        "B": "Coincidence detection defines line of response",
+        "C": "Lower scatter",
+        "D": "Better detectors"
+      },
+      "correct": "B",
+      "explanation": "Coincidence detection provides electronic collimation in PET."
+    },
+    {
+      "id": "fi2_27",
+      "text": "What quantity is reconstructed in PET and SPECT?",
+      "options": {
+        "A": "Density",
+        "B": "Attenuation coefficient",
+        "C": "Tracer activity distribution",
+        "D": "Blood flow velocity"
+      },
+      "correct": "C",
+      "explanation": "Both PET and SPECT reconstruct spatial tracer activity in Bq."
+    },
+    {
+      "id": "fi2_28",
+      "text": "Why is PET typically more sensitive than SPECT?",
+      "options": {
+        "A": "Lower photon energy",
+        "B": "Absence of physical collimators",
+        "C": "Higher noise",
+        "D": "Longer acquisition times"
+      },
+      "correct": "B",
+      "explanation": "PET uses electronic collimation, avoiding the sensitivity loss of physical collimators."
+    },
+    {
+      "id": "fi2_29",
+      "text": "What limits spatial resolution in nuclear medicine imaging?",
+      "options": {
+        "A": "Voxel size only",
+        "B": "Collimation, scattering, and detector physics",
+        "C": "Reconstruction algorithm only",
+        "D": "Tracer half-life"
+      },
+      "correct": "B",
+      "explanation": "The take-home slide relates resolution to collimation, scattering, and detector properties."
+    },
+    {
+      "id": "fi2_30",
+      "text": "Why is nuclear imaging often combined with CT?",
+      "options": {
+        "A": "To reduce noise",
+        "B": "To provide anatomical localization",
+        "C": "To increase sensitivity",
+        "D": "To shorten acquisition"
+      },
+      "correct": "B",
+      "explanation": "Hybrid imaging combines functional uptake with anatomical reference."
+    },
+    {
+      "id": "fi2_31",
+      "text": "What is the primary source of noise in nuclear imaging?",
+      "options": {
+        "A": "Electronic noise only",
+        "B": "Photon counting statistics",
+        "C": "Gradient imperfections",
+        "D": "Motion artifacts"
+      },
+      "correct": "B",
+      "explanation": "Emission imaging is dominated by Poisson photon statistics."
+    },
+    {
+      "id": "fi2_32",
+      "text": "Why does scattering degrade image quality?",
+      "options": {
+        "A": "It reduces spatial resolution",
+        "B": "It introduces mispositioned photons",
+        "C": "It lowers tracer uptake",
+        "D": "It increases dose"
+      },
+      "correct": "B",
+      "explanation": "Scattered photons are detected at incorrect positions, blurring images."
+    },
+    {
+      "id": "fi2_33",
+      "text": "What is the relationship between energy resolution and scatter rejection?",
+      "options": {
+        "A": "No relationship",
+        "B": "Better energy resolution improves scatter rejection",
+        "C": "Energy resolution worsens resolution",
+        "D": "Scatter rejection increases noise"
+      },
+      "correct": "B",
+      "explanation": "Energy windowing relies on sufficient energy resolution to reject scattered photons."
+    },
+    {
+      "id": "fi2_34",
+      "text": "Why is emission tomography fundamentally different from CT?",
+      "options": {
+        "A": "CT uses gamma photons",
+        "B": "Emission sources are inside the patient",
+        "C": "CT requires collimators",
+        "D": "Emission tomography is 2D"
+      },
+      "correct": "B",
+      "explanation": "In emission tomography, radiation originates inside the body."
+    },
+    {
+      "id": "fi2_35",
+      "text": "What is the main take-home message of Functional Imaging II?",
+      "options": {
+        "A": "High spatial resolution is key",
+        "B": "Functional imaging visualizes biochemical processes using tracers and emission physics",
+        "C": "CT replaces nuclear imaging",
+        "D": "Reconstruction is trivial"
+      },
+      "correct": "B",
+      "explanation": "The final slide summarizes functional imaging, tracers, emission tomography, and reconstruction."
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "us_app1",
+      "text": "What is the main motivation for applying image processing to ultrasound images?",
+      "options": {
+        "A": "Increase radiation dose",
+        "B": "Remove all noise completely",
+        "C": "Enhance real anatomy while suppressing speckle noise",
+        "D": "Replace ultrasound hardware"
+      },
+      "correct": "C",
+      "explanation": "The slide \"The Challenge – Noise vs. Signal\" states the goal is to enhance the signal (real anatomy) while suppressing noise caused by speckle."
+    },
+    {
+      "id": "us_app2",
+      "text": "Why is speckle considered both a problem and an opportunity?",
+      "options": {
+        "A": "It reduces contrast but improves resolution",
+        "B": "It is hardware noise but easy to remove",
+        "C": "It degrades image appearance but encodes tissue motion",
+        "D": "It only appears in Doppler imaging"
+      },
+      "correct": "C",
+      "explanation": "Slides explicitly state the shift: \"Speckle is noise → remove it\" versus \"Speckle is information → track it.\""
+    },
+    {
+      "id": "us_app3",
+      "text": "What is the key limitation of simple spatial mean filtering in ultrasound?",
+      "options": {
+        "A": "High computational cost",
+        "B": "Poor noise reduction",
+        "C": "Severe blurring of fine details",
+        "D": "Sensitivity to gain changes"
+      },
+      "correct": "C",
+      "explanation": "The slide on Mean Filters lists the main disadvantage as \"Severe blurring\" that destroys fine details and edges."
+    },
+    {
+      "id": "us_app4",
+      "text": "Why is the Gaussian filter preferred over the mean filter?",
+      "options": {
+        "A": "It removes all speckle",
+        "B": "It preserves edges perfectly",
+        "C": "It weights nearby pixels more strongly",
+        "D": "It is non-local"
+      },
+      "correct": "C",
+      "explanation": "The Gaussian filter slide explains that pixels closer to the center are weighted more, leading to smoother results than the mean filter."
+    },
+    {
+      "id": "us_app5",
+      "text": "What is the key insight behind Non-Local Means (NLM) filtering?",
+      "options": {
+        "A": "Only local neighbors matter",
+        "B": "Noise is spatially uniform",
+        "C": "Similar textures repeat across the image",
+        "D": "Edges should always be preserved"
+      },
+      "correct": "C",
+      "explanation": "The NLM slide states that similar tissue textures repeat throughout the ultrasound image, even at distant locations."
+    },
+    {
+      "id": "us_app6",
+      "text": "How do weights differ between mean filtering and NLM filtering?",
+      "options": {
+        "A": "Mean uses patch similarity, NLM uses distance",
+        "B": "Both use spatial distance only",
+        "C": "Mean uses spatial distance, NLM uses patch similarity",
+        "D": "Both use patch similarity"
+      },
+      "correct": "C",
+      "explanation": "The lecture explicitly contrasts mean filtering (spatial distance) with NLM (patch similarity regardless of distance)."
+    },
+    {
+      "id": "us_app7",
+      "text": "Why are wavelet filters effective for ultrasound denoising?",
+      "options": {
+        "A": "They blur the entire image uniformly",
+        "B": "They separate structure from detail components",
+        "C": "They remove low-frequency information",
+        "D": "They increase spatial resolution"
+      },
+      "correct": "B",
+      "explanation": "Wavelet slides explain that low frequencies contain anatomy (LL) while high frequencies contain edges and noise."
+    },
+    {
+      "id": "us_app8",
+      "text": "In wavelet denoising, how is speckle noise typically represented?",
+      "options": {
+        "A": "Large coefficients in LL",
+        "B": "Large coefficients in HH",
+        "C": "Small coefficients in detail bands",
+        "D": "DC offset"
+      },
+      "correct": "C",
+      "explanation": "The lecture states that noise appears as small, random coefficients in the high-frequency sub-bands."
+    },
+    {
+      "id": "us_app9",
+      "text": "What is speckle tracking primarily used to estimate?",
+      "options": {
+        "A": "Intensity changes",
+        "B": "Tissue motion and deformation",
+        "C": "Acoustic impedance",
+        "D": "Beam width"
+      },
+      "correct": "B",
+      "explanation": "The speckle tracking definition slide states it provides motion vectors and deformation (strain)."
+    },
+    {
+      "id": "us_app10",
+      "text": "Why does simple Sum of Absolute Differences (SAD) fail in ultrasound tracking?",
+      "options": {
+        "A": "Too slow",
+        "B": "Sensitive to gain and attenuation changes",
+        "C": "Low spatial resolution",
+        "D": "Ignores motion"
+      },
+      "correct": "B",
+      "explanation": "The SAD slide explains that brightness changes due to gain and attenuation cause false mismatches."
+    },
+    {
+      "id": "us_app11",
+      "text": "What is the key advantage of Normalized Cross-Correlation (NCC)?",
+      "options": {
+        "A": "Faster than SAD",
+        "B": "Insensitive to brightness changes",
+        "C": "Requires no windowing",
+        "D": "Lower computational cost"
+      },
+      "correct": "B",
+      "explanation": "The NCC slide states it matches shape rather than absolute brightness and is robust to gain changes."
+    },
+    {
+      "id": "us_app12",
+      "text": "Why is NCC more suitable than SAD for medical ultrasound?",
+      "options": {
+        "A": "Lower noise",
+        "B": "Better for high-contrast video",
+        "C": "Robust to speckle and brightness variation",
+        "D": "Uses fewer pixels"
+      },
+      "correct": "C",
+      "explanation": "The comparison table explicitly concludes: \"Use NCC for Medical Speckle Tracking.\""
+    },
+    {
+      "id": "us_app13",
+      "text": "What does Global Longitudinal Strain (GLS) measure?",
+      "options": {
+        "A": "Blood flow velocity",
+        "B": "Radial artery motion",
+        "C": "Shortening of myocardial fibers",
+        "D": "Heart volume"
+      },
+      "correct": "C",
+      "explanation": "The GLS slide explains that myocardial fibers shorten longitudinally during contraction."
+    },
+    {
+      "id": "us_app14",
+      "text": "Why can speckle tracking detect arterial stiffness before plaques are visible?",
+      "options": {
+        "A": "Higher spatial resolution",
+        "B": "Direct plaque imaging",
+        "C": "Measurement of micrometer-scale wall motion",
+        "D": "Contrast enhancement"
+      },
+      "correct": "C",
+      "explanation": "The arterial stiffness slide emphasizes tracking tiny radial expansion before visible plaques form."
+    },
+    {
+      "id": "us_app15",
+      "text": "What is the main challenge of out-of-plane motion in ultrasound?",
+      "options": {
+        "A": "Low frame rate",
+        "B": "2D probes cannot directly observe the elevational axis",
+        "C": "Speckle disappears",
+        "D": "Poor axial resolution"
+      },
+      "correct": "B",
+      "explanation": "The lecture states that standard 2D probes cannot \"see\" motion along the Z-axis."
+    },
+    {
+      "id": "us_app16",
+      "text": "How is out-of-plane motion estimated using speckle decorrelation?",
+      "options": {
+        "A": "Using Doppler shift",
+        "B": "Tracking brightness",
+        "C": "Measuring correlation decay with depth",
+        "D": "Using segmentation"
+      },
+      "correct": "C",
+      "explanation": "The speckle decorrelation slide explains correlation decays deterministically as scatterers leave the resolution cell."
+    },
+    {
+      "id": "us_app17",
+      "text": "Why is speckle decorrelation often approximated as Gaussian?",
+      "options": {
+        "A": "Noise is Gaussian",
+        "B": "Ultrasound beams are Gaussian",
+        "C": "Fully developed speckle exhibits Gaussian decay",
+        "D": "Computational simplicity"
+      },
+      "correct": "C",
+      "explanation": "The lecture explicitly notes that for fully developed speckle, correlation decay is approximated as Gaussian."
+    },
+    {
+      "id": "us_app18",
+      "text": "Why is speckle tracking preferred over segmentation for robotic ultrasound control?",
+      "options": {
+        "A": "More accurate anatomy",
+        "B": "Lower computational cost and stable texture",
+        "C": "Better spatial resolution",
+        "D": "No noise"
+      },
+      "correct": "B",
+      "explanation": "Slides state organs are hard to segment in real-time, but speckle provides a stable fingerprint."
+    },
+    {
+      "id": "us_app19",
+      "text": "What is the main goal of feature extraction filters in ultrasound?",
+      "options": {
+        "A": "Remove all noise",
+        "B": "Convert images to binary",
+        "C": "Highlight specific anatomical structures",
+        "D": "Increase frame rate"
+      },
+      "correct": "C",
+      "explanation": "The feature extraction slide states the goal is to highlight structures hard to see with the naked eye."
+    },
+    {
+      "id": "us_app20",
+      "text": "Why is the Sobel filter preferred over simple gradient filters?",
+      "options": {
+        "A": "Higher resolution",
+        "B": "Less computational cost",
+        "C": "Noise robustness via smoothing",
+        "D": "Directional independence"
+      },
+      "correct": "C",
+      "explanation": "The Sobel slide explains it combines Gaussian smoothing with differentiation to reduce noise sensitivity."
+    },
+    {
+      "id": "us_app21",
+      "text": "What type of structures are Gabor filters particularly suited for in ultrasound?",
+      "options": {
+        "A": "Blobs",
+        "B": "Tubes",
+        "C": "Directional textures like needles",
+        "D": "Flat regions"
+      },
+      "correct": "C",
+      "explanation": "The lecture notes Gabor filters are frequently used to detect needles due to their directional texture."
+    },
+    {
+      "id": "us_app22",
+      "text": "Why does Frangi filtering outperform edge detection for vessels?",
+      "options": {
+        "A": "Higher contrast",
+        "B": "Uses first derivatives",
+        "C": "Detects tubular structures via Hessian eigenvalues",
+        "D": "Removes noise"
+      },
+      "correct": "C",
+      "explanation": "The Frangi slide explains it analyzes curvature using Hessian eigenvalues to identify tubes."
+    },
+    {
+      "id": "us_app23",
+      "text": "Which eigenvalue pattern indicates a tubular structure in Frangi filtering?",
+      "options": {
+        "A": "Both eigenvalues near zero",
+        "B": "One large, one near zero",
+        "C": "One small, one large (negative)",
+        "D": "Both large and positive"
+      },
+      "correct": "C",
+      "explanation": "The lecture states for vessels: |λ1| ≈ 0 and |λ2| ≫ 0 (negative curvature)."
+    },
+    {
+      "id": "us_app24",
+      "text": "Why do standard algorithms fail in acoustic shadows?",
+      "options": {
+        "A": "Low resolution",
+        "B": "High noise",
+        "C": "They track noise instead of signal",
+        "D": "Wrong frequency"
+      },
+      "correct": "C",
+      "explanation": "The confidence map slide states algorithms fail because they treat shadow pixels as valid."
+    },
+    {
+      "id": "us_app25",
+      "text": "What does a confidence map represent?",
+      "options": {
+        "A": "Image brightness",
+        "B": "Noise variance",
+        "C": "Probability of reliable signal",
+        "D": "Segmentation likelihood"
+      },
+      "correct": "C",
+      "explanation": "Confidence maps assign values from 0 (unreliable) to 1 (reliable)."
+    },
+    {
+      "id": "us_app26",
+      "text": "What is the intuition behind random walks for confidence estimation?",
+      "options": {
+        "A": "Simulate wave scattering",
+        "B": "Simulate beam propagation from the probe",
+        "C": "Simulate blood flow",
+        "D": "Simulate tissue motion"
+      },
+      "correct": "B",
+      "explanation": "The slide explains virtual particles travel from the transducer through tissue."
+    },
+    {
+      "id": "us_app27",
+      "text": "Why does confidence drop behind strong reflectors?",
+      "options": {
+        "A": "High noise",
+        "B": "Attenuation",
+        "C": "Blocked ultrasound propagation",
+        "D": "Low resolution"
+      },
+      "correct": "C",
+      "explanation": "Strong reflectors block beam propagation, leading to acoustic shadows."
+    },
+    {
+      "id": "us_app28",
+      "text": "How are confidence maps used in optimization problems?",
+      "options": {
+        "A": "As masks",
+        "B": "As segmentation priors",
+        "C": "As weighting matrices in the cost function",
+        "D": "As filters"
+      },
+      "correct": "C",
+      "explanation": "The slide shows minimizing confidence-weighted error instead of raw error."
+    },
+    {
+      "id": "us_app29",
+      "text": "What is a major challenge for deep learning in ultrasound?",
+      "options": {
+        "A": "Too much data",
+        "B": "Standardized image quality",
+        "C": "Data scarcity and high noise",
+        "D": "Low resolution"
+      },
+      "correct": "C",
+      "explanation": "The challenges slide lists data scarcity, high noise, and lack of standardization."
+    },
+    {
+      "id": "us_app30",
+      "text": "Why is ultrasound particularly difficult for generalization in AI models?",
+      "options": {
+        "A": "Low frame rate",
+        "B": "Physics-dependent image formation",
+        "C": "Lack of labels",
+        "D": "High resolution"
+      },
+      "correct": "B",
+      "explanation": "Slides highlight poor generalization due to limited understanding of ultrasound physics."
+    },
+    {
+      "id": "us_app31",
+      "text": "What advantage do foundation models bring to ultrasound analysis?",
+      "options": {
+        "A": "Perfect segmentation",
+        "B": "Elimination of noise",
+        "C": "Pretrained representations from large datasets",
+        "D": "Higher frequency imaging"
+      },
+      "correct": "C",
+      "explanation": "The UltraSAM slide shows leveraging large open-access datasets."
+    },
+    {
+      "id": "us_app32",
+      "text": "Why are skip connections important in U-Net architectures?",
+      "options": {
+        "A": "Reduce computation",
+        "B": "Preserve fine details",
+        "C": "Increase depth",
+        "D": "Reduce noise"
+      },
+      "correct": "B",
+      "explanation": "The U-Net slide states skip connections conserve fine details."
+    },
+    {
+      "id": "us_app33",
+      "text": "Which application best illustrates confidence-driven robotic ultrasound?",
+      "options": {
+        "A": "Image classification",
+        "B": "Tumor segmentation",
+        "C": "Robotic probe control ignoring shadows",
+        "D": "Doppler imaging"
+      },
+      "correct": "C",
+      "explanation": "The lecture describes confidence-driven control to ignore unreliable shadow regions."
+    },
+    {
+      "id": "us_app34",
+      "text": "Why is ultrasound especially suited for robotic visual servoing?",
+      "options": {
+        "A": "High contrast",
+        "B": "No noise",
+        "C": "Real-time imaging",
+        "D": "High spatial resolution"
+      },
+      "correct": "C",
+      "explanation": "The lecture emphasizes real-time ultrasound for robotic motion compensation."
+    },
+    {
+      "id": "us_app35",
+      "text": "What is the overarching message of this lecture?",
+      "options": {
+        "A": "Ultrasound should be fully automated",
+        "B": "AI replaces physics-based models",
+        "C": "Combining physics, image processing, and AI enables robust ultrasound applications",
+        "D": "Denoising is the only challenge"
+      },
+      "correct": "C",
+      "explanation": "The lecture consistently integrates physics, filtering, tracking, confidence modeling, and AI."
+    }
+  ]
+}
