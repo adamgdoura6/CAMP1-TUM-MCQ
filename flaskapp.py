@@ -372,5 +372,10 @@ def index():
     return response_data
 
 if __name__ == "__main__":
-    # Run: python app.py
-    app.run(host="127.0.0.1", port=80, debug=True)
+    # Run: python flaskapp.py
+    # For local development, use port 5000 (port 80 requires admin privileges)
+    port = int(os.environ.get("PORT", 5000))
+    debug = os.environ.get("FLASK_ENV") != "production"
+    # Bind to 0.0.0.0 in production for container/serverless, 127.0.0.1 for local dev
+    host = "0.0.0.0" if os.environ.get("FLASK_ENV") == "production" else "127.0.0.1"
+    app.run(host=host, port=port, debug=debug)
