@@ -59,8 +59,9 @@ CAMP1-TUM-MCQ/
    ```
 
 2. **Open your browser**
-   - Navigate to `http://127.0.0.1` (or `http://localhost`)
-   - The app will run on port 80
+   - Navigate to `http://127.0.0.1:5000` (or `http://localhost:5000`)
+   - The app will run on port 5000 by default
+   - To use a different port, set the PORT environment variable: `PORT=8080 python flaskapp.py`
 
 3. **Select a theme** and start answering questions
 
@@ -158,10 +159,10 @@ Each theme file should follow this structure:
 
 ## Troubleshooting
 
-**Port 80 is already in use:**
-- Edit `flaskapp.py` and change the port number:
-  ```python
-  app.run(host="127.0.0.1", port=5000, debug=True)  # Use port 5000 instead
+**Port already in use:**
+- Change the port by setting the PORT environment variable:
+  ```bash
+  PORT=8080 python flaskapp.py
   ```
 
 **Questions not loading:**
@@ -200,6 +201,62 @@ Potential features for future versions:
 - ☐ User authentication and cloud sync
 - ☐ Time limits for exams
 - ☐ Question search and filtering
+
+## Deployment
+
+### Deploy to Vercel (Easiest Method)
+
+This application is configured for easy deployment to Vercel:
+
+1. **Fork or clone this repository to your GitHub account**
+
+2. **Sign up for Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Sign up with your GitHub account (free)
+
+3. **Import your repository**
+   - Click "Add New Project" in Vercel dashboard
+   - Select this repository
+   - Vercel will automatically detect the Flask app
+
+4. **Configure environment variables (Optional but recommended)**
+   - In Vercel project settings, add environment variable:
+   - `FLASK_ENV` = `production` (disables debug mode for security)
+
+5. **Deploy**
+   - Click "Deploy"
+   - Your app will be live in minutes at `https://your-project.vercel.app`
+
+6. **Access your deployed app**
+   - Vercel provides a public URL automatically
+   - Every push to your main branch auto-deploys
+
+**Configuration files:**
+- `requirements.txt` - Python dependencies
+- `vercel.json` - Vercel deployment configuration
+- `themes/` - Question bank files (automatically included)
+
+**Note:** The app uses serverless functions on Vercel, so it scales automatically and has no server management overhead.
+
+### Alternative Deployment Options
+
+**Deploy to Railway:**
+1. Sign up at [railway.app](https://railway.app)
+2. Connect your GitHub repository
+3. Set environment variable: `FLASK_ENV=production`
+4. Deploy with one click
+
+**Deploy to Render:**
+1. Sign up at [render.com](https://render.com)
+2. Create a new Web Service
+3. Connect your GitHub repository
+4. Set environment variable: `FLASK_ENV=production`
+5. Set start command: `python flaskapp.py`
+
+**Deploy to PythonAnywhere:**
+1. Sign up at [pythonanywhere.com](https://www.pythonanywhere.com)
+2. Upload files or clone from GitHub
+3. Configure WSGI file to point to `flaskapp.py`
 
 ## License
 
