@@ -202,6 +202,14 @@ Potential features for future versions:
 - ☐ Time limits for exams
 - ☐ Question search and filtering
 
+## Analytics
+
+This application uses **Vercel Analytics** to collect anonymous usage statistics when deployed to Vercel. The analytics are privacy-friendly and help improve the application:
+- No cookies are used
+- No personal information is collected
+- Only page views and web vitals are tracked
+- Data is used solely for improving application performance
+
 ## Deployment
 
 ### Deploy to Vercel (Easiest Method)

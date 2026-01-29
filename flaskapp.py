@@ -34,6 +34,7 @@ TEMPLATE = """
 <head>
   <meta charset="utf-8" />
   <title>MCQ Checker</title>
+  <script defer src="/_vercel/insights/script.js"></script>
   <style>
     * {
       color-scheme: dark;
