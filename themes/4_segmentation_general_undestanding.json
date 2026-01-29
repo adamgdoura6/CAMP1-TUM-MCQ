@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "seg_gen1",
+      "text": "Why does medical image segmentation require many different algorithms instead of a single universal method?",
+      "options": {
+        "A": "Because some algorithms are outdated",
+        "B": "Because different images and tasks violate different algorithm assumptions",
+        "C": "Because segmentation is computationally expensive",
+        "D": "Because modern hardware requires multiple methods"
+      },
+      "correct": "B",
+      "explanation": "Different segmentation algorithms rely on different assumptions about intensity, noise, shape, and spatial continuity, and no single method works robustly for all imaging scenarios."
+    },
+    {
+      "id": "seg_gen2",
+      "text": "Which statement best explains the progression from thresholding to learning-based segmentation methods?",
+      "options": {
+        "A": "Thresholding is slower than learning-based methods",
+        "B": "Learning-based methods require no parameters",
+        "C": "Increasing image complexity requires more contextual information",
+        "D": "Thresholding cannot be implemented in software"
+      },
+      "correct": "C",
+      "explanation": "As images become more complex and noisy, segmentation methods must incorporate more context and prior knowledge, which motivates the shift toward learning-based approaches."
+    },
+    {
+      "id": "seg_gen3",
+      "text": "Which segmentation methods rely primarily on pixel intensity without explicitly enforcing spatial continuity?",
+      "options": {
+        "A": "Region growing and watershed",
+        "B": "Graph cuts and active contours",
+        "C": "Thresholding and K-means clustering",
+        "D": "Superpixels and CNNs"
+      },
+      "correct": "C",
+      "explanation": "Thresholding and K-means operate mainly on pixel intensity or feature similarity and do not inherently enforce spatial coherence."
+    },
+    {
+      "id": "seg_gen4",
+      "text": "Why is edge detection alone usually insufficient for segmentation?",
+      "options": {
+        "A": "Edges are sensitive to noise only",
+        "B": "Edges do not define closed, labeled regions",
+        "C": "Edge detection is computationally expensive",
+        "D": "Edges ignore intensity information"
+      },
+      "correct": "B",
+      "explanation": "Edge detection identifies boundaries but does not produce complete, labeled regions, which are required for segmentation."
+    },
+    {
+      "id": "seg_gen5",
+      "text": "Which property fundamentally distinguishes region-based segmentation from clustering-based segmentation?",
+      "options": {
+        "A": "Use of optimization",
+        "B": "Use of labeled data",
+        "C": "Explicit use of spatial neighborhood information",
+        "D": "Use of intensity histograms"
+      },
+      "correct": "C",
+      "explanation": "Region-based methods explicitly consider spatial adjacency, while clustering groups pixels based on feature similarity without enforcing spatial continuity."
+    },
+    {
+      "id": "seg_gen6",
+      "text": "Which segmentation approaches explicitly enforce spatial continuity of regions?",
+      "options": {
+        "A": "Thresholding and K-means",
+        "B": "Region growing and watershed",
+        "C": "Histogram-based methods",
+        "D": "Pixel-wise classification only"
+      },
+      "correct": "B",
+      "explanation": "Region growing and watershed expand regions based on neighboring pixels, explicitly enforcing spatial continuity."
+    },
+    {
+      "id": "seg_gen7",
+      "text": "Why is K-means clustering often considered a baseline segmentation method?",
+      "options": {
+        "A": "It produces anatomically accurate regions",
+        "B": "It uses spatial constraints by default",
+        "C": "It groups pixels by similarity without anatomical awareness",
+        "D": "It is robust to noise and initialization"
+      },
+      "correct": "C",
+      "explanation": "K-means is simple and unsupervised but ignores spatial and anatomical context, making it a useful baseline with clear limitations."
+    },
+    {
+      "id": "seg_gen8",
+      "text": "Which segmentation methods can be formulated as global optimization problems?",
+      "options": {
+        "A": "Thresholding only",
+        "B": "Region growing only",
+        "C": "Graph cuts and active contours",
+        "D": "Edge detection only"
+      },
+      "correct": "C",
+      "explanation": "Graph cuts and active contours formulate segmentation as the minimization of an energy or cost function."
+    },
+    {
+      "id": "seg_gen9",
+      "text": "Why are superpixels commonly used as a preprocessing step in segmentation pipelines?",
+      "options": {
+        "A": "They replace segmentation entirely",
+        "B": "They remove noise automatically",
+        "C": "They reduce problem complexity while preserving boundaries",
+        "D": "They increase image resolution"
+      },
+      "correct": "C",
+      "explanation": "Superpixels group pixels into meaningful units, reducing computational complexity while maintaining important boundaries."
+    },
+    {
+      "id": "seg_gen10",
+      "text": "Which statement best explains why CNN-based segmentation can outperform classical methods?",
+      "options": {
+        "A": "CNNs are faster",
+        "B": "CNNs eliminate noise",
+        "C": "CNNs learn hierarchical features and spatial context from data",
+        "D": "CNNs do not require training data"
+      },
+      "correct": "C",
+      "explanation": "CNNs learn complex, multi-scale features and contextual information directly from data, enabling more robust segmentation in complex scenarios."
+    },
+    {
+      "id": "seg_gen11",
+      "text": "Why is pixel-wise accuracy often a misleading metric for segmentation quality?",
+      "options": {
+        "A": "It cannot be computed efficiently",
+        "B": "It ignores true positives",
+        "C": "It is dominated by background pixels",
+        "D": "It penalizes false positives too strongly"
+      },
+      "correct": "C",
+      "explanation": "In medical images, background pixels often dominate, leading to high accuracy even when the target structure is poorly segmented."
+    },
+    {
+      "id": "seg_gen12",
+      "text": "Why does no segmentation algorithm work well without assumptions?",
+      "options": {
+        "A": "Because images are always noisy",
+        "B": "Because segmentation is ill-defined",
+        "C": "Because every method assumes certain image properties",
+        "D": "Because algorithms require training data"
+      },
+      "correct": "C",
+      "explanation": "Each segmentation algorithm relies on assumptions about intensity, shape, smoothness, or data distribution, which may not hold in all images."
+    }
+  ]
+}
